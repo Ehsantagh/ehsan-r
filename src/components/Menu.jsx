@@ -50,18 +50,22 @@ export default function Menu() {
 
       {/* Menu Items */}
       <nav className="menu-items">
-        <ul>
-          {MENU_ITEMS.map((item, index) => (
-            <li key={index}>
-              <button 
-                className={location.pathname === item.path ? 'active' : ''}
-                onClick={(e) => handleMenuItemClick(item.path, e)}
-              >
-                {item.label}
-              </button>
-            </li>
-          ))}
-        </ul>
+        {!isOpen ? (
+          <span className="menu-text">Menu</span>
+        ) : (
+          <ul>
+            {MENU_ITEMS.map((item, index) => (
+              <li key={index}>
+                <button 
+                  className={location.pathname === item.path ? 'active' : ''}
+                  onClick={(e) => handleMenuItemClick(item.path, e)}
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
     </div>
   );

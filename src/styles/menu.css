@@ -44,6 +44,32 @@
   transition: filter 0.2s ease;
 }
 
+.menu-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.05em;
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.menu-container.open .menu-text {
+  display: none;
+}
+
+.menu-container.contact-mode .menu-text {
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .menu-ladder:hover img {
   filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
 }
@@ -57,11 +83,15 @@
   backdrop-filter: none;
   display: flex;
   align-items: center;
-  transition: backdrop-filter 0.3s ease;
-}pointer-events: auto;
-  
+  transition: backdrop-filter 0.3s ease, opacity 1s ease-in-out, visibility 1s ease-in-out;
+  pointer-events: auto;
+  opacity: 0;
+  visibility: hidden;
+}
 
 .menu-container.open .menu-items {
+  opacity: 1;
+  visibility: visible;
   backdrop-filter: blur(10px);
 }
 
