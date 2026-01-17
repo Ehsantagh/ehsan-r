@@ -45,6 +45,17 @@
   transform-style: preserve-3d;
 }
 
+/* Background Images */
+.cube-bg-image {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 5;
+  transform: translateZ(-60px);
+}
+
 /* SVG Wrapper */
 .svg-wrapper {
   position: absolute;
@@ -117,6 +128,18 @@
 
 .face-list-item {
   color: #000;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.face-list-item::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /* Face Positioning */

@@ -107,6 +107,7 @@
 
 /* Start Button */
 .start-button {
+  display: none;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
   background: white;
@@ -119,7 +120,6 @@
   transition: all 0.3s ease;
   animation: slideUp 0.5s ease-out;
   min-height: 44px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -170,6 +170,9 @@
 }
 
 @media (max-width: 480px) {
+  .start-button {
+    display: flex;
+  }
   .home-page {
     padding: 1rem;
   }
