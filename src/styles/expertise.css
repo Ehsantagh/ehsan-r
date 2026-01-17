@@ -55,8 +55,7 @@
   z-index: 5;
   transform: translateZ(-20px) translateY(-40px);
   left: 0%;
-  top: 20%;
-}
+  top: 20%;  backface-visibility: hidden;}
 
 /* SVG Wrapper */
 .svg-wrapper {
