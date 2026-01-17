@@ -48,12 +48,14 @@
 /* Background Images */
 .cube-bg-image {
   position: absolute;
-  width: 90%;
-  height: 90%;
+  width: 54%;
+  height: 54%;
   object-fit: cover;
   opacity: 1;
   z-index: 5;
-  transform: translateZ(-60px);
+  transform: translateZ(-20px) translateY(-40px);
+  left: 0%;
+  top: 20%;
 }
 
 /* SVG Wrapper */
