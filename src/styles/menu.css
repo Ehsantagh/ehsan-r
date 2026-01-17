@@ -49,12 +49,18 @@
   font-weight: 600;
   color: #000000;
   letter-spacing: 0.05em;
+  position: absolute;
+  left: 140px;
+  bottom: 1.35rem;
   opacity: 1;
   animation: fadeIn 1s ease-in-out forwards;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  pointer-events: auto;
 }
 
-.menu-container.open .menu-text {
-  display: none;
+.menu-text:hover {
+  opacity: 0.7;
 }
 
 .menu-container.contact-mode .menu-text {

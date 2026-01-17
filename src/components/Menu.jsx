@@ -48,24 +48,25 @@ export default function Menu() {
         <img src={isContactPage ? '/images/home/menu-ladder-white.png' : '/images/home/menu-ladder.png'} alt="menu ladder" />
       </div>
 
+      {/* Menu Text - Always visible */}
+      {!isOpen && (
+        <span className="menu-text" onClick={handleLadderClick}>Menu</span>
+      )}
+
       {/* Menu Items */}
       <nav className="menu-items">
-        {!isOpen ? (
-          <span className="menu-text">Menu</span>
-        ) : (
-          <ul>
-            {MENU_ITEMS.map((item, index) => (
-              <li key={index}>
-                <button 
-                  className={location.pathname === item.path ? 'active' : ''}
-                  onClick={(e) => handleMenuItemClick(item.path, e)}
-                >
-                  {item.label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
+        <ul>
+          {MENU_ITEMS.map((item, index) => (
+            <li key={index}>
+              <button 
+                className={location.pathname === item.path ? 'active' : ''}
+                onClick={(e) => handleMenuItemClick(item.path, e)}
+              >
+                {item.label}
+              </button>
+            </li>
+          ))}
+        </ul>
       </nav>
     </div>
   );
