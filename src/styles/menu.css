@@ -1,0 +1,190 @@
+/* Menu Component */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  z-index: 999;
+  pointer-events: none;
+  transition: transform 1s ease-in-out;
+}
+
+.menu-container.closed {
+  transform: translateY(calc(-88% + 1.5rem));
+}
+
+.menu-container.open {
+  transform: translateY(0);
+}
+
+/* Ladder Image - Clickable */
+.menu-ladder {
+  width: 120px;
+  height: auto;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: transparent;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: auto;
+}
+
+.menu-ladder img {
+  width: 100%;
+  height: auto;
+  max-width: 135px;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+  transition: filter 0.2s ease;
+}
+
+.menu-ladder:hover img {
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
+}
+
+/* Menu Items List */
+.menu-items {
+  flex: 0;
+  width: auto;
+  padding: 1.35rem 1.8rem;
+  background: transparent;
+  backdrop-filter: none;
+  display: flex;
+  align-items: center;
+  transition: backdrop-filter 0.3s ease;
+}pointer-events: auto;
+  
+
+.menu-container.open .menu-items {
+  backdrop-filter: blur(10px);
+}
+
+.menu-items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.menu-items li {
+  margin: 0;
+}
+
+.menu-items button {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 1.08rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.45rem 0.9rem;
+  transition: all 0.2s ease;
+  position: relative;
+  text-align: left;
+  pointer-events: auto;
+}
+
+.menu-items button:hover,
+.menu-items button.active {
+  font-weight: 700;
+}
+
+.menu-items button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width 0.3s ease;
+}
+
+.menu-items button:hover {
+  color: #FB6D07;
+}
+
+.menu-items button:hover::before {
+  width: 100%;
+}
+
+/* Contact page overrides */
+.menu-container.contact-mode .menu-items button {
+  color: #ffffff;
+}
+
+.menu-container.contact-mode .menu-items button::before {
+  background: #ffffff;
+}
+
+.menu-container.contact-mode .menu-items button:hover,
+.menu-container.contact-mode .menu-items button.active {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.menu-container.contact-mode .menu-items button:hover::before,
+.menu-container.contact-mode .menu-items button.active::before {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-ladder {
+    width: 105px;
+    padding: 0;
+  }
+
+  .menu-ladder img {
+    max-width: 112.5px;
+  }
+
+  .menu-items {
+    padding: 0.9rem 1.35rem;
+  }
+
+  .menu-items ul {
+    gap: 0.72rem;
+  }
+
+  .menu-items button {
+    font-size: 0.9rem;
+    padding: 0.36rem 0.72rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container.closed {
+    transform: translateY(calc(-88% + 1.5rem));
+  }
+
+  .menu-ladder {
+    width: 90px;
+    padding: 0;
+  }
+
+  .menu-ladder img {
+    max-width: 101.25px;
+  }
+
+  .menu-items {
+    padding: 0.675rem 0.9rem;
+  }
+
+  .menu-items ul {
+    gap: 0.54rem;
+  }
+
+  .menu-items button {
+    font-size: 0.81rem;
+    padding: 0.27rem 0.54rem;
+  }
+}

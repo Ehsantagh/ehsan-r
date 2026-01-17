@@ -1,0 +1,261 @@
+/* CV Page */
+.cv-page {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 2rem;
+}
+
+.cv-container {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+  padding: 2rem;
+}
+
+.cv-content {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Header */
+.cv-header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #000;
+}
+
+.cv-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cv-header .title {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.cv-header .intro {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Sections */
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-section h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.5rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skill-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.skill-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Achievements */
+.achievement {
+  margin-bottom: 1.5rem;
+}
+
+.achievement h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.achievement ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.achievement li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Jobs */
+.job {
+  margin-bottom: 1.5rem;
+}
+
+.job-header {
+  margin-bottom: 0.5rem;
+}
+
+.job-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.job-header .company {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.job ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.job li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Education */
+.education {
+  margin-bottom: 1rem;
+}
+
+.education h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.education p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Awards */
+.awards-list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.awards-list li {
+  margin-bottom: 0.75rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.cv-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.download-button {
+  padding: 0.8rem 1.5rem;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: slideUp 0.5s ease-out;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+.download-button:hover {
+  background: #000;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cv-page {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .cv-container {
+    padding: 1rem;
+  }
+
+  .cv-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .cv-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-page {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .cv-container {
+    padding: 1rem;
+  }
+
+  .download-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}

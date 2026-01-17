@@ -1,0 +1,149 @@
+/* Torch Page */
+.torch-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.torch-container {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 1;
+  position: relative;
+  cursor: none;
+  user-select: none;
+}
+
+/* Triangle */
+.torch-triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200vmax;
+  height: 200vmax;
+  pointer-events: none;
+}
+
+/* Torch Image Wrapper */
+.torch-image-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.torch-image {
+  width: 80px;
+  height: 80px;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+/* Small Images Container */
+.small-images-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+
+.small-image-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24%;
+  aspect-ratio: 1;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  pointer-events: auto;
+  z-index: 5;
+}
+
+.small-image-item:hover {
+  transform: translate(-50%, -50%) scale(1.1) !important;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+}
+
+.small-image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+/* Position items in a circle around the center */
+.small-image-item:nth-child(1) {
+  top: calc(50% - 50%);
+  left: 50%;
+}
+
+.small-image-item:nth-child(2) {
+  top: calc(50% - 25%);
+  left: calc(50% + 43.3%);
+}
+
+.small-image-item:nth-child(3) {
+  top: calc(50% + 25%);
+  left: calc(50% + 43.3%);
+}
+
+.small-image-item:nth-child(4) {
+  top: calc(50% + 50%);
+  left: 50%;
+}
+
+.small-image-item:nth-child(5) {
+  top: calc(50% + 25%);
+  left: calc(50% - 43.3%);
+}
+
+.small-image-item:nth-child(5) {
+  top: calc(50% + 25%);
+  left: calc(50% - 43.3%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .torch-container {
+    max-width: 600px;
+  }
+
+  .torch-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .torch-triangle {
+    width: 130%;
+    height: 130%;
+  }
+
+  .small-image-item {
+    width: 28%;
+  }
+}
+
+@media (max-width: 480px) {
+  .torch-container {
+    max-width: 400px;
+  }
+
+  .torch-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .small-image-item {
+    width: 32%;
+  }
+}

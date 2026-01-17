@@ -1,0 +1,260 @@
+/* Expertise Page */
+.expertise-page {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Cube Container */
+.cube-container {
+  width: 100%;
+  max-width: 600px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+/* Cube */
+.cube {
+  width: 600px;
+  height: 360px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1.5s ease-in-out;
+  cursor: pointer;
+}
+
+/* Cube Faces */
+.cube-face {
+  position: absolute;
+  width: 600px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+/* SVG Wrapper */
+.svg-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 6.67% 8.33%, 6.67% 61.11%, 51.67% 61.11%, 51.67% 8.33%, 6.67% 8.33%);
+}
+
+/* SVG Face Frame */
+.face-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  pointer-events: all;
+}
+
+/* Face Texts */
+.face-texts {
+  padding: 1.5rem;
+  text-align: left;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  position: absolute;
+  z-index: 15;
+  margin-left: 50%;
+  margin-top: 15%;
+  backface-visibility: hidden;
+}
+
+.face-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.face-paragraph {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #000;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.face-list {
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  list-style: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.face-list-item {
+  color: #000;
+}
+
+/* Face Positioning */
+.cube-face.front {
+  transform: translateZ(300px);
+}
+
+.cube-face.right {
+  transform: rotateY(90deg) translateZ(300px);
+}
+
+.cube-face.back {
+  transform: rotateY(180deg) translateZ(300px);
+}
+
+.cube-face.left {
+  transform: rotateY(-90deg) translateZ(300px);
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .expertise-page {
+    padding: 1.5rem;
+  }
+
+  .cube-container {
+    max-width: 100%;
+    height: 510px;
+  }
+
+  .cube {
+    width: 1020px;
+    height: 510px;
+  }
+
+  .cube-face {
+    width: 1020px;
+    height: 510px;
+  }
+
+  .cube-face.front {
+    transform: translateZ(510px);
+  }
+
+  .cube-face.right {
+    transform: rotateY(90deg) translateZ(510px);
+  }
+
+  .cube-face.back {
+    transform: rotateY(180deg) translateZ(510px);
+  }
+
+  .cube-face.left {
+    transform: rotateY(-90deg) translateZ(510px);
+  }
+
+  .face-title {
+    font-size: 1.3rem;
+  }
+
+  .face-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .face-texts {
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise-page {
+    padding: 1.5rem;
+  }
+
+  .cube-container {
+    max-width: 480px;
+    height: 240px;
+  }
+
+  .cube {
+    width: 480px;
+    height: 240px;
+  }
+
+  .cube-face {
+    width: 480px;
+    height: 240px;
+  }
+
+  .face-title {
+    font-size: 1.2rem;
+  }
+
+  .face-paragraph {
+    font-size: 0.85rem;
+  }
+
+  .face-texts {
+    padding: 1rem;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .expertise-page {
+    padding: 1rem;
+  }
+
+  .cube-container {
+    max-width: 100%;
+    height: 210px;
+  }
+
+  .cube {
+    width: 420px;
+    height: 210px;
+  }
+
+  .cube-face {
+    width: 420px;
+    height: 210px;
+  }
+
+  .face-title {
+    font-size: 1rem;
+  }
+
+  .face-paragraph {
+    font-size: 0.75rem;
+  }
+
+  .face-texts {
+    padding: 0.8rem;
+    gap: 0.6rem;
+  }
+
+  .face-window {
+    border-radius: 4px;
+  }
+}
