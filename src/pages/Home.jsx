@@ -40,18 +40,18 @@ export default function Home() {
 
         {/* Title */}
         <h1 className="intro-title">
-          {isHovered ? 'Start ->' : 'Hi, I am Ehsan'}
+          {isHovered ? <img src="/images/home/torch.png" alt="torch" className="torch-image" /> : 'Hi, I am Ehsan'}
         </h1>
 
         {/* Subtitle */}
         <p className="intro-subtitle">
-          {isHovered ? 'use the torch!' : 'Senior Product Designer'}
+          {isHovered ? 'Grab the torch!' : 'Senior Product Designer'}
         </p>
 
         {/* Paragraph */}
         <p className={`intro-paragraph ${isHovered ? 'centered' : ''}`}>
           {isHovered
-            ? 'See you on the other side'
+            ? ''
             : 'Designing complex digital products with a strong foundation in business, systems, and user-centred thinking.'}
         </p>
 
