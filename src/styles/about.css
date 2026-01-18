@@ -22,8 +22,33 @@
   flex-shrink: 0;
 }
 
-.about-deco.top { transform: rotate(180deg); }
-.about-deco.bottom { transform: none; }
+.about-deco.top {
+  transform: scaleY(-100%);
+  animation: slideInTop 2s ease-in-out forwards;
+}
+
+.about-deco.bottom {
+  transform: none;
+  animation: slideInBottom 2s ease-in-out forwards;
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(27vh) scaleY(5%);
+  }
+  to {
+    transform: translateY(0) scaleY(-100%);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(-27vh) scaleY(5%);
+  }
+  to {
+    transform: translateY(0) scaleY(100%);
+  }
+}
 
 .about-center {
   position: absolute;
