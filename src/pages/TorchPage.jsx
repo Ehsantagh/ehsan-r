@@ -22,8 +22,10 @@ export default function TorchPage() {
   const [angleWidth, setAngleWidth] = useState(30);
   const [targetAngleWidth, setTargetAngleWidth] = useState(30);
   const containerRef = useRef(null);
+  const targetRotationRef = useRef(0);
+  const targetAngleWidthRef = useRef(30);
 
-  // Calculate nearest snap angle
+  // Get snap angle
   const getSnapAngle = (angle) => {
     // Normalize angle to 0-360
     let normalized = angle % 360;
@@ -48,6 +50,15 @@ export default function TorchPage() {
 
     return normalized;
   };
+
+  // Update refs when state changes
+  useEffect(() => {
+    targetRotationRef.current = targetRotation;
+  }, [targetRotation]);
+
+  useEffect(() => {
+    targetAngleWidthRef.current = targetAngleWidth;
+  }, [targetAngleWidth]);
 
   // Handle mouse/touch movement
   const handleMouseMove = (e) => {
@@ -86,7 +97,7 @@ export default function TorchPage() {
     
     const animate = () => {
       setRotation((current) => {
-        let diff = targetRotation - current;
+        let diff = targetRotationRef.current - current;
 
         // Handle wrap-around (shortest path)
         if (diff > 180) diff -= 360;
@@ -94,7 +105,7 @@ export default function TorchPage() {
 
         // Only continue animating if there's a noticeable difference
         if (Math.abs(diff) < 0.5) {
-          return targetRotation;
+          return targetRotationRef.current;
         }
 
         // Smoothly approach target
@@ -108,7 +119,7 @@ export default function TorchPage() {
     animationFrameId = requestAnimationFrame(animate);
 
     return () => cancelAnimationFrame(animationFrameId);
-  }, [targetRotation]);
+  }, []);
 
   // Angle width dilation animation (random smooth pulsing)
   useEffect(() => {
@@ -117,7 +128,7 @@ export default function TorchPage() {
 
     const animateAngle = () => {
       setAngleWidth((current) => {
-        const diff = targetAngleWidth - current;
+        const diff = targetAngleWidthRef.current - current;
         
         // Smoothly approach target
         const newAngle = current + diff * 0.015;
@@ -142,7 +153,7 @@ export default function TorchPage() {
       cancelAnimationFrame(animationFrameId);
       clearTimeout(changeTimer);
     };
-  }, [targetAngleWidth]);
+  }, []);
 
   return (
     <div className="torch-page">
