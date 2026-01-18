@@ -18,7 +18,7 @@ export default function About() {
       <div className="about-center">
         <div className="about-box">
           <div className="pair">
-            <h1><br/><br/><br/><br/><br/></h1>
+            <h1><br/><br/></h1>
             <h3>About</h3>
             <p>I design products with a strong sense of ownership.</p>
             <p>My background spans product design, industrial design, and entrepreneurship — which means I've spent most of my career close to real constraints: markets, users, engineering limits, and business trade-offs.</p>

@@ -50,6 +50,17 @@
   }
 }
 
+@keyframes slideAboutBox {
+  from {
+    transform: translateY(40vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+
 .about-center {
   position: absolute;
   top: clamp(2rem, 15%, 10rem);
@@ -63,6 +74,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  overflow: hidden;
   /* background-color: aqua; */
 }
 
@@ -91,6 +103,8 @@
   box-shadow: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  animation: slideAboutBox 1.5s ease-out forwards 1.5s;
+  opacity: 0;
 }
 
 .about-box::-webkit-scrollbar {
