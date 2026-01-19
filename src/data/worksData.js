@@ -4,7 +4,7 @@ export const worksData = [
     backgroundColor: '#FCEFD9',
     projectLink: 'https://calypsosun.com',
     projectLinkText: 'visit calypsosun.com',
-    title: 'Project One - UX/UI Design',
+    title: 'Calypso Digital Experience — A Comprehensive UX Redesign',
     timeline: '2024',
     team: '3 Designers',
     role: 'Lead UX',
@@ -348,7 +348,7 @@ export const worksData = [
         body: 'Reducing perceived effort while increasing long-term value.'
       }
     ],
-    category: 'Visual',
+    category: 'UX/UI',
   },
   {
     id: 3,
@@ -540,7 +540,7 @@ export const worksData = [
         body: 'Balancing personalisation depth with speed of completion.'
       }
     ],
-    category: 'Code',
+    category: 'UX/UI',
   },
   {
     id: 4,
@@ -845,7 +845,7 @@ export const worksData = [
         body: 'Consistency without limiting creative flexibility.'
       }
     ],
-    category: 'Industrial',
+    category: 'Visual',
   },
   {
     id: 5,
@@ -1876,7 +1876,7 @@ export const worksData = [
         body: 'Balancing visual richness with simplicity and performance.'
       }
     ],
-    category: 'Industrial',
+    category: 'UX/UI',
   },
   {
     id: 9,
@@ -2150,7 +2150,7 @@ export const worksData = [
         body: 'Improving clarity and scalability without alienating existing users.'
       }
     ],
-    category: 'Code',
+    category: 'UX/UI',
   },
   {
     id: 10,
@@ -2264,7 +2264,7 @@ export const worksData = [
         body: 'We applied the identity across website design, print collateral, digital marketing assets, and internal communications. Provided brand training to all teams and established brand governance processes.'
       }
     ],
-    category: 'Visual',
+    category: 'UX/UI',
   },
   {
     id: 11,
@@ -2378,7 +2378,7 @@ export const worksData = [
         body: 'We conducted extensive QA testing across browsers and devices, performed A/B testing on key pages, monitored performance metrics post-launch, and implemented improvements based on user feedback.'
       }
     ],
-    category: 'UX/UI',
+    category: 'Code',
   },
   {
     id: 12,
@@ -2492,7 +2492,7 @@ export const worksData = [
         body: 'We conducted environmental testing, compliance validation, stress testing under various conditions, established manufacturing processes, and implemented quality control procedures.'
       }
     ],
-    category: 'Code',
+    category: 'Industrial',
   },
   {
     id: 13,
@@ -2606,7 +2606,7 @@ export const worksData = [
         body: 'We conducted team training sessions, gathered feedback from early adopters, refined components based on usage patterns, and continuously updated the library.'
       }
     ],
-    category: 'UX/UI',
+    category: 'Industrial',
   },
   {
     id: 14,
@@ -2720,7 +2720,7 @@ export const worksData = [
         body: 'We coordinated with manufacturers to ensure production quality, conducted pre-production approvals, managed rollout to retail channels, and monitored in-market performance.'
       }
     ],
-    category: 'Visual',
+    category: 'Industrial',
   },
   {
     id: 15,
@@ -2834,6 +2834,6 @@ export const worksData = [
         body: 'We conducted extensive QA testing, load testing for scale validation, security audits and penetration testing, and implemented continuous monitoring and incident response procedures.'
       }
     ],
-    category: 'Code',
+    category: 'Industrial',
   },
 ];
