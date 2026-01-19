@@ -100,6 +100,7 @@
   width: var(--deco-width);
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   box-shadow: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
