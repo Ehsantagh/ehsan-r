@@ -65,7 +65,7 @@ export default function WorkTemplate() {
 
   return (
     <div style={{ backgroundColor: work.backgroundColor || '#ffffff', minHeight: '100vh' }}>
-      <Navbar selectedCategory={work.category || 'All'} />
+      <Navbar selectedCategory={work.category || 'All'} backgroundColor={work.backgroundColor || '#ffffff'} />
 
       <header className="work-header">
         <h1>{work.title}</h1>

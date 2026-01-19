@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/portfolio.css';
 
-export default function Navbar({ selectedCategory, onCategoryChange }) {
+export default function Navbar({ selectedCategory, onCategoryChange, backgroundColor = '#ffffff' }) {
   const items = ['All', 'UX/UI', 'Visual', 'Code', 'Industrial'];
   const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ export default function Navbar({ selectedCategory, onCategoryChange }) {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{ backgroundColor }}>
       <ul className="navbar-menu">
         {items.map((item, index) => (
           <li key={`navbar-${index}-${item}`}>

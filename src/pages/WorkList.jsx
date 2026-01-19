@@ -25,7 +25,7 @@ export default function WorkList() {
 
   return (
     <>
-      <Navbar selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} />
+      <Navbar selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} backgroundColor="#ffffff" />
       
       <main className="page-container">
         <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Work</h1>
