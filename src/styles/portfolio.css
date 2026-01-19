@@ -32,7 +32,9 @@
 
 .navbar-menu button {
   background: none;
+  background-color: transparent;
   border: none;
+  border-radius: 0;
   color: inherit;
   font: inherit;
   cursor: pointer;
