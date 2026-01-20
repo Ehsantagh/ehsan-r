@@ -5,9 +5,9 @@ export const worksData = [
     projectLink: 'https://calypsosun.com',
     projectLinkText: 'visit calypsosun.com',
     title: 'Calypso Digital Experience — A Comprehensive UX Redesign',
-    timeline: '2024',
-    team: '3 Designers',
-    role: 'Lead UX',
+    timeline: '2024-2025',
+    team: '3 Designers, 2 Developers',
+    role: 'Project Lead and UX Designer',
     heroImage: '/images/project-1/1-hero.webp',
     sections: [
       {
@@ -119,9 +119,9 @@ export const worksData = [
     projectLink: 'https://calypsosun.com',
     projectLinkText: 'visit calypsosun.com',
     title: 'Calypso User Account — Designing Ownership, Continuity, and Trust',
-    timeline: '2024',
-    team: '2 Designers',
-    role: 'Brand Director',
+    timeline: '2024-2025',
+    team: '2 Designers, 2 Developers',
+    role: 'Project Lead and UX Designer',
     heroImage: '/images/project-2/2-hero.webp',
     sections: [
       {
@@ -357,8 +357,8 @@ export const worksData = [
     projectLinkText: 'visit calypsosun.com',
     title: 'Product finder: Guiding Every Customer to Their Ideal Sun Care',
     timeline: '2024',
-    team: '2 Developers',
-    role: 'Lead Frontend Developer',
+    team: '2 Developers, 1 Designer',
+    role: 'Project Lead and UX Designer',
     heroImage: '/images/project-3/3-hero.webp',
     sections: [
       {
@@ -548,9 +548,9 @@ export const worksData = [
     projectLink: 'https://calypsosun.com',
     projectLinkText: 'visit calypsosun.com',
     title: 'Calypso Brand Visual System — Designing a Scalable, Human-Centred Identity',
-    timeline: '2024',
-    team: '2 Designers',
-    role: 'Lead Designer',
+    timeline: '2024-2025',
+    team: '3 Designers',
+    role: 'Project Lead',
     heroImage: '/images/project-4/4-hero.webp',
     sections: [
       {
@@ -853,9 +853,9 @@ export const worksData = [
     projectLink: 'https://calypsosun.com',
     projectLinkText: 'visit calypsosun.com',
     title: 'Sunshine Spotlight: Real people, real sun care stories',
-    timeline: '2024',
+    timeline: '2024-2025',
     team: '2 Designers, 2 Developers',
-    role: 'UX Lead',
+    role: 'Project Lead and UX Designer',
     heroImage: '/images/project-5/5-hero.webp',
     sections: [
       {
@@ -1045,12 +1045,12 @@ export const worksData = [
   {
     id: 6,
     backgroundColor: '#E2DDFF',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
+    projectLink: 'https://cabanasun.com',
+    projectLinkText: 'visit cabanasun.com',
     title: 'Cabana Animation System — Motion as Brand Language',
     timeline: '2025',
     team: '3 Designers',
-    role: 'Campaign Director',
+    role: 'Project Lead and animator',
     heroImage: '/images/project-6/6-hero.webp',
     sections: [
       {
@@ -1251,12 +1251,12 @@ export const worksData = [
   {
     id: 7,
     backgroundColor: '#E2DDFF',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
+    projectLink: 'https://cabanasun.com',
+    projectLinkText: 'visit cabanasun.com',
     title: 'Engineering a Scroll-Driven, Animation-First Experience',
     timeline: '2025',
-    team: '1 Developers, 2 Designers',
-    role: 'Technical Lead',
+    team: '1 Developers',
+    role: 'Frontend Engineer',
     heroImage: '/images/project-7/7-hero.webp',
     sections: [
       {
@@ -1591,12 +1591,12 @@ export const worksData = [
   {
     id: 8,
     backgroundColor: '#E2DDFF',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
+    projectLink: 'https://cabanasun.com',
+    projectLinkText: 'visit cabanasun.com',
     title: 'Cabana Website UX & UI Design — A Brand-First Digital Presence for Global Markets',
     timeline: '2025',
-    team: '3 Designers',
-    role: 'Lead Designer',
+    team: '2 Designers, 1 Developer',
+    role: 'Project Lead and UX Designer',
     heroImage: '/images/project-8/8-hero.webp',
     sections: [
       {
@@ -1884,9 +1884,9 @@ export const worksData = [
     projectLink: 'https://calypsosun.com',
     projectLinkText: 'visit calypsosun.com',
     title: 'UI redesign for Calypso home page and product page',
-    timeline: '2025',
+    timeline: '2024-2025',
     team: '3 Developers, 1 Designer',
-    role: 'Full Stack Developer',
+    role: 'Project Lead and UX Designer',
     heroImage: '/images/project-9/9-hero.webp',
     sections: [
       
@@ -2155,12 +2155,12 @@ export const worksData = [
   {
     id: 10,
     backgroundColor: '#E8FFF8',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
+    projectLink: 'https://ehsan.design',
+    projectLinkText: 'visit ehsan.design',
     title: 'Project Ten - ehsan-design design',
-    timeline: '2023',
-    team: '2 Designers',
-    role: 'Brand Designer',
+    timeline: '2025',
+    team: 'Personal Project',
+    role: 'Designer and developer',
     heroImage: '/images/project-10/10-hero.webp',
     sections: [
       {
@@ -2269,12 +2269,12 @@ export const worksData = [
   {
     id: 11,
     backgroundColor: '#FFF0E8',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
+    projectLink: 'https://ehsan.design',
+    projectLinkText: 'visit ehsan.design',
     title: 'Project Eleven - ehsan-design code',
-    timeline: '2024',
-    team: '3 Developers, 2 Designers',
-    role: 'Lead Designer',
+    timeline: '2025',
+    team: 'Personal Project',
+    role: 'Designer and developer',
     heroImage: '/images/project-11/11-hero.webp',
     sections: [
       {
@@ -2383,8 +2383,8 @@ export const worksData = [
   {
     id: 12,
     backgroundColor: '#E8E8FC',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
+    projectLink: 'https://ekasdesign.com',
+    projectLinkText: 'visit ekasdesign.com',
     title: 'Project Twelve - Industrial design pr-1',
     timeline: '2022-2023',
     team: '4 Engineers',

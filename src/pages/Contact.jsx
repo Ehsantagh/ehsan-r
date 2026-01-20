@@ -1,5 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import emailjs from '@emailjs/browser'
 import '../styles/contact.css'
+
+// Initialize EmailJS with your public key
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,6 +13,8 @@ export default function Contact() {
 
   const [submitted, setSubmitted] = useState(false)
   const [successMessage, setSuccessMessage] = useState('')
+  const [errorMessage, setErrorMessage] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -18,21 +24,44 @@ export default function Contact() {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    setIsLoading(true)
+    setErrorMessage('')
 
-    // Show success message
-    setSubmitted(true)
-    setSuccessMessage('You have successfully sent your message. I will be in touch shortly')
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          to_email: 'ehsan.taghaddosi@gmail.com',
+          from_email: formData.email,
+          message: formData.message,
+        }
+      )
 
-    // Clear form
-    setFormData({ email: '', message: '' })
+      // Show success message
+      setSubmitted(true)
+      setSuccessMessage('You have successfully sent your message. I will be in touch shortly')
 
-    // Reset success state after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false)
-      setSuccessMessage('')
-    }, 5000)
+      // Clear form
+      setFormData({ email: '', message: '' })
+
+      // Reset success state after 5 seconds
+      setTimeout(() => {
+        setSubmitted(false)
+        setSuccessMessage('')
+      }, 5000)
+    } catch (error) {
+      console.error('Email send error:', error)
+      setErrorMessage('Failed to send message. Please try again.')
+      setTimeout(() => {
+        setErrorMessage('')
+      }, 5000)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -73,11 +102,15 @@ export default function Contact() {
               <button 
                 type="submit" 
                 className="submit-button"
+                disabled={isLoading}
               >
-                {submitted ? 'Sent ✓' : 'Send'}
+                {isLoading ? 'Sending...' : submitted ? 'Sent ✓' : 'Send'}
               </button>
               {successMessage && (
                 <p className="success-message">{successMessage}</p>
+              )}
+              {errorMessage && (
+                <p className="error-message">{errorMessage}</p>
               )}
             </div>
           </form>
