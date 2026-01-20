@@ -195,6 +195,7 @@ export default function CV() {
       <button className="download-button" onClick={handleDownload}>
         Download CV ↓
       </button>
+      <p><br/></p>
     </div>
   )
 }

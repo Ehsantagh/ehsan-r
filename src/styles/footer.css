@@ -1,14 +1,11 @@
 /* Footer Component */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   width: 100%;
   padding: 2rem 1rem;
   background: transparent;
-  z-index: 50;
   pointer-events: auto;
+  margin-top: -4rem;
 }
 
 .footer-content {

@@ -6,12 +6,13 @@ html {
 
 .home-page {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  box-sizing: border-box;
 }
 
 
