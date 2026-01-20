@@ -101,17 +101,21 @@
   margin-left: 50%;
   margin-top: 15%;
   backface-visibility: hidden;
+  line-height: 1.2rem;
   user-select: none;
 }
 
 .face-title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #000;
   text-align: left;
   padding-left: 10%;
+  line-height: 1.8rem;
   user-select: none;
+  padding-left: 2.5rem;
+  
 }
 
 .face-paragraph {
@@ -128,7 +132,7 @@
 
 .face-list {
   margin: 0;
-  padding-left: 10%;
+  padding-left: 13%;
   padding-right: 10%;
   list-style: none;
   box-sizing: border-box;
