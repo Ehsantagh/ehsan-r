@@ -6,7 +6,7 @@ export default function Footer({ isWhite = false }) {
       <div className="footer-content">
         <span className="footer-text">Coded by me in React</span>
         <span className="footer-divider">|</span>
-        <span className="footer-text">copyright 2026</span>
+        <span className="footer-text">© {new Date().getFullYear()}</span>
         <span className="footer-divider">|</span>
         <button className="footer-icon-button" aria-label="message">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

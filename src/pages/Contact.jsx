@@ -82,7 +82,7 @@ export default function Contact() {
         </div>
         
         <div className="form-container">
-          <h1 className="contact-title">Message me</h1>
+          <h1 className="contact-title">Hit me up</h1>
           
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">

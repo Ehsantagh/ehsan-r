@@ -52,7 +52,7 @@ export default function About() {
           <div className="pair">
             <h3></h3>
             <p>Currently based in London, I’m working as a Senior Product Designer and Head of Design & Digital Experience. I’m open to roles where design has real influence — and where ownership is valued.</p>
-            <p><br/></p>
+            <p><br/>Ehsan Taghaddosi<br/><br/></p>
         <div className="button-group">
           <button className="start-button" onClick={handleViewWork}>View my work →</button>
           <button className="start-button" onClick={handleDownloadCV}>Download CV →</button>
