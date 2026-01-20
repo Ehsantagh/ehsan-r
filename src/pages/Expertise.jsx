@@ -43,9 +43,50 @@ const EXPERTISE_DATA = [
 
 export default function Expertise() {
   const [rotation, setRotation] = useState(71);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [dragRotation, setDragRotation] = useState(0);
 
   const handleCubeClick = () => {
     setRotation((prev) => prev + 90);
+  };
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setDragStart({ x: e.clientX, y: e.clientY });
+    setDragRotation(0);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    const deltaX = e.clientX - dragStart.x;
+    setDragRotation(deltaX * 0.5);
+  };
+
+  const handleMouseUp = (e) => {
+    if (!isDragging) return;
+    setIsDragging(false);
+    setRotation((prev) => prev + dragRotation);
+    setDragRotation(0);
+  };
+
+  const handleTouchStart = (e) => {
+    setIsDragging(true);
+    setDragStart({ x: e.touches[0].clientX, y: e.touches[0].clientY });
+    setDragRotation(0);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    const deltaX = e.touches[0].clientX - dragStart.x;
+    setDragRotation(deltaX * 0.5);
+  };
+
+  const handleTouchEnd = (e) => {
+    if (!isDragging) return;
+    setIsDragging(false);
+    setRotation((prev) => prev + dragRotation);
+    setDragRotation(0);
   };
 
   // Auto-rotate every 10 seconds
@@ -63,9 +104,16 @@ export default function Expertise() {
         <div
           className="cube"
           style={{
-            transform: `rotateY(${rotation}deg)`,
+            transform: `rotateY(${rotation + dragRotation}deg)`,
           }}
           onClick={handleCubeClick}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
           {/* Front Face */}
           <div className="cube-face front">
