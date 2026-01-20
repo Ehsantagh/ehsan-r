@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/torch.css';
 
 // Define 6 distinct snap angles (in degrees)
-const SNAP_ANGLES = [270, 190, 30, 90, 150];
+const SNAP_ANGLES = [270, 30, 90, 150];
 const SNAP_STRENGTH = 20; // degrees - how close to snap point before snapping
 
 // Image data with links
