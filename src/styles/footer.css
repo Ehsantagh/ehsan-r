@@ -8,6 +8,11 @@
   margin-top: -4rem;
 }
 
+/* For pages with dark backgrounds (Torch, Contact), reduce negative margin */
+.footer.white {
+  margin-top: -2rem;
+}
+
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -50,7 +55,17 @@
 .footer.white .footer-text,
 .footer.white .footer-divider,
 .footer.white .footer-icon-button {
-  color: #ffffff;
+  color: #ffffff !important;
+}
+
+.footer.white .footer-icon-button svg {
+  stroke: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.footer.white .footer-icon-button svg path {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
 }
 
 .footer.white .footer-divider {
