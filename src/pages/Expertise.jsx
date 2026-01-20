@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles/expertise.css';
 
 const EXPERTISE_DATA = [
@@ -47,6 +47,15 @@ export default function Expertise() {
   const handleCubeClick = () => {
     setRotation((prev) => prev + 90);
   };
+
+  // Auto-rotate every 10 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleCubeClick();
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="expertise-page">
