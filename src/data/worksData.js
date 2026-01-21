@@ -2152,234 +2152,234 @@ export const worksData = [
     ],
     category: 'UX/UI',
   },
-  {
-    id: 10,
-    backgroundColor: '#E8FFF8',
-    projectLink: 'https://ehsan.design',
-    projectLinkText: 'visit ehsan.design',
-    title: 'Project Ten - ehsan-design design',
-    timeline: '2025',
-    team: 'Personal Project',
-    role: 'Designer and developer',
-    heroImage: '/images/project-10/10-hero.webp',
-    sections: [
-      {
-        id: 1,
-        title: 'Discovery',
-        subtitle: 'Brand Exploration',
-        body: 'We conducted workshops to understand the brand values, personality, and target audience.',
-        image: '/images/project-10/section-1.webp',
-        caption: 'add caption',
-      },
-      {
-        id: 2,
-        title: 'Identity Design',
-        subtitle: 'Creating Visual Language',
-        body: 'A complete visual identity was created including logo, color palette, and typography.',
-        image: '/images/project-10/section-2.webp',
-        caption: 'add caption',
-      },
-      {
-        id: 3,
-        title: 'Application',
-        subtitle: 'Implementation Across Channels',
-        body: 'The brand identity was applied across website, print, and digital marketing materials.',
-        image: '/images/project-10/section-3.webp',
-        caption: 'add caption',
-      },
-    ],
-    summary: [
-      {
-        title: 'Project Goals',
-        body: 'Create a comprehensive brand identity system that reflects company values, resonates with target audience, and provides consistent visual language across all touchpoints.'
-      },
-      {
-        title: 'Key Challenges',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Balancing creative vision with business constraints and market positioning',
-              'Creating memorable visual identity that stands out in competitive market',
-              'Ensuring consistency across diverse applications and formats',
-              'Developing flexible system that allows for future growth and adaptation'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Design Process',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Conducted brand workshops and stakeholder interviews',
-              'Researched competitive landscape and market trends',
-              'Developed multiple visual directions and concepts',
-              'Tested concepts with target audience and refined based on feedback'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Results & Success Metrics',
-        body: 'The brand identity increased brand recognition by 55%, improved market positioning, achieved consistent application across all channels, and received positive stakeholder and customer feedback.'
-      }
-    ],
-    methodology: [
-      {
-        title: 'Discovery & Research',
-        body: 'We conducted stakeholder interviews, brand workshops, competitive analysis, and market research to understand positioning, values, and target audience preferences.'
-      },
-      {
-        title: 'Visual Direction Development',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Explored multiple visual directions and mood boards',
-              'Developed logo concepts with multiple variations',
-              'Created color palette exploration and typography systems',
-              'Tested designs for versatility across applications'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Brand System Documentation',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Created comprehensive brand guidelines document',
-              'Developed logo usage standards and variations',
-              'Specified color systems with accessibility considerations',
-              'Documented typography hierarchy and application rules'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Implementation & Launch',
-        body: 'We applied the identity across website design, print collateral, digital marketing assets, and internal communications. Provided brand training to all teams and established brand governance processes.'
-      }
-    ],
-    category: 'UX/UI',
-  },
-  {
-    id: 11,
-    backgroundColor: '#FFF0E8',
-    projectLink: 'https://ehsan.design',
-    projectLinkText: 'visit ehsan.design',
-    title: 'Project Eleven - ehsan-design code',
-    timeline: '2025',
-    team: 'Personal Project',
-    role: 'Designer and developer',
-    heroImage: '/images/project-11/11-hero.webp',
-    sections: [
-      {
-        id: 1,
-        title: 'Audit',
-        subtitle: 'Analyzing Current Site',
-        body: 'We conducted a comprehensive audit of the existing website to identify areas for improvement.',
-        image: '/images/project-11/section-1.webp',
-        caption: 'add caption',
-      },
-      {
-        id: 2,
-        title: 'Redesign',
-        subtitle: 'Modern and Responsive',
-        body: 'A modern, responsive redesign was created to improve user experience and conversion rates.',
-        image: '/images/project-11/section-2.webp',
-        caption: 'add caption',
-      },
-      {
-        id: 3,
-        title: 'Launch',
-        subtitle: 'Deployment and Monitoring',
-        body: 'The new website was launched with careful monitoring to ensure smooth transition and optimal performance.',
-        image: '/images/project-11/section-3.webp',
-        caption: 'add caption',
-      },
-    ],
-    summary: [
-      {
-        title: 'Project Goals',
-        body: 'Redesign and modernize an existing website to improve user experience, increase conversion rates, and establish a responsive, mobile-first digital presence.'
-      },
-      {
-        title: 'Key Challenges',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Auditing existing site to identify pain points and opportunities',
-              'Preserving valuable content while improving information architecture',
-              'Implementing responsive design across diverse user devices',
-              'Ensuring smooth migration without disrupting user experience'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Design Process',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Conducted comprehensive audit of existing website performance and usability',
-              'Analyzed user behavior and identified conversion bottlenecks',
-              'Developed wireframes and prototypes for improved layouts',
-              'Created responsive design system supporting mobile-first approach'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Results & Success Metrics',
-        body: 'The redesign increased conversion rate by 35%, reduced bounce rate by 40%, improved page load speed by 60%, and achieved 95+ mobile usability scores.'
-      }
-    ],
-    methodology: [
-      {
-        title: 'Audit & Analysis',
-        body: 'We conducted comprehensive site audits, analyzed user behavior data, identified conversion bottlenecks, and compiled findings in detailed improvement recommendations.'
-      },
-      {
-        title: 'Strategy & Planning',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Defined redesign goals and success metrics',
-              'Prioritized improvements based on impact and effort',
-              'Planned information architecture changes',
-              'Established timeline and resource requirements'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Design & Development',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Created mobile-first responsive design system',
-              'Designed modern UI components and patterns',
-              'Developed optimized front-end code',
-              'Integrated with backend systems and content management'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Testing & Launch',
-        body: 'We conducted extensive QA testing across browsers and devices, performed A/B testing on key pages, monitored performance metrics post-launch, and implemented improvements based on user feedback.'
-      }
-    ],
-    category: 'Code',
-  },
+  // {
+  //   id: 10,
+  //   backgroundColor: '#E8FFF8',
+  //   projectLink: 'https://ehsan.design',
+  //   projectLinkText: 'visit ehsan.design',
+  //   title: 'Project Ten - ehsan-design design',
+  //   timeline: '2025',
+  //   team: 'Personal Project',
+  //   role: 'Designer and developer',
+  //   heroImage: '/images/project-10/10-hero.webp',
+  //   sections: [
+  //     {
+  //       id: 1,
+  //       title: 'Discovery',
+  //       subtitle: 'Brand Exploration',
+  //       body: 'We conducted workshops to understand the brand values, personality, and target audience.',
+  //       image: '/images/project-10/section-1.webp',
+  //       caption: 'add caption',
+  //     },
+  //     {
+  //       id: 2,
+  //       title: 'Identity Design',
+  //       subtitle: 'Creating Visual Language',
+  //       body: 'A complete visual identity was created including logo, color palette, and typography.',
+  //       image: '/images/project-10/section-2.webp',
+  //       caption: 'add caption',
+  //     },
+  //     {
+  //       id: 3,
+  //       title: 'Application',
+  //       subtitle: 'Implementation Across Channels',
+  //       body: 'The brand identity was applied across website, print, and digital marketing materials.',
+  //       image: '/images/project-10/section-3.webp',
+  //       caption: 'add caption',
+  //     },
+  //   ],
+  //   summary: [
+  //     {
+  //       title: 'Project Goals',
+  //       body: 'Create a comprehensive brand identity system that reflects company values, resonates with target audience, and provides consistent visual language across all touchpoints.'
+  //     },
+  //     {
+  //       title: 'Key Challenges',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Balancing creative vision with business constraints and market positioning',
+  //             'Creating memorable visual identity that stands out in competitive market',
+  //             'Ensuring consistency across diverse applications and formats',
+  //             'Developing flexible system that allows for future growth and adaptation'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Design Process',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Conducted brand workshops and stakeholder interviews',
+  //             'Researched competitive landscape and market trends',
+  //             'Developed multiple visual directions and concepts',
+  //             'Tested concepts with target audience and refined based on feedback'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Results & Success Metrics',
+  //       body: 'The brand identity increased brand recognition by 55%, improved market positioning, achieved consistent application across all channels, and received positive stakeholder and customer feedback.'
+  //     }
+  //   ],
+  //   methodology: [
+  //     {
+  //       title: 'Discovery & Research',
+  //       body: 'We conducted stakeholder interviews, brand workshops, competitive analysis, and market research to understand positioning, values, and target audience preferences.'
+  //     },
+  //     {
+  //       title: 'Visual Direction Development',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Explored multiple visual directions and mood boards',
+  //             'Developed logo concepts with multiple variations',
+  //             'Created color palette exploration and typography systems',
+  //             'Tested designs for versatility across applications'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Brand System Documentation',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Created comprehensive brand guidelines document',
+  //             'Developed logo usage standards and variations',
+  //             'Specified color systems with accessibility considerations',
+  //             'Documented typography hierarchy and application rules'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Implementation & Launch',
+  //       body: 'We applied the identity across website design, print collateral, digital marketing assets, and internal communications. Provided brand training to all teams and established brand governance processes.'
+  //     }
+  //   ],
+  //   category: 'UX/UI',
+  // },
+  // {
+  //   id: 11,
+  //   backgroundColor: '#FFF0E8',
+  //   projectLink: 'https://ehsan.design',
+  //   projectLinkText: 'visit ehsan.design',
+  //   title: 'Project Eleven - ehsan-design code',
+  //   timeline: '2025',
+  //   team: 'Personal Project',
+  //   role: 'Designer and developer',
+  //   heroImage: '/images/project-11/11-hero.webp',
+  //   sections: [
+  //     {
+  //       id: 1,
+  //       title: 'Audit',
+  //       subtitle: 'Analyzing Current Site',
+  //       body: 'We conducted a comprehensive audit of the existing website to identify areas for improvement.',
+  //       image: '/images/project-11/section-1.webp',
+  //       caption: 'add caption',
+  //     },
+  //     {
+  //       id: 2,
+  //       title: 'Redesign',
+  //       subtitle: 'Modern and Responsive',
+  //       body: 'A modern, responsive redesign was created to improve user experience and conversion rates.',
+  //       image: '/images/project-11/section-2.webp',
+  //       caption: 'add caption',
+  //     },
+  //     {
+  //       id: 3,
+  //       title: 'Launch',
+  //       subtitle: 'Deployment and Monitoring',
+  //       body: 'The new website was launched with careful monitoring to ensure smooth transition and optimal performance.',
+  //       image: '/images/project-11/section-3.webp',
+  //       caption: 'add caption',
+  //     },
+  //   ],
+  //   summary: [
+  //     {
+  //       title: 'Project Goals',
+  //       body: 'Redesign and modernize an existing website to improve user experience, increase conversion rates, and establish a responsive, mobile-first digital presence.'
+  //     },
+  //     {
+  //       title: 'Key Challenges',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Auditing existing site to identify pain points and opportunities',
+  //             'Preserving valuable content while improving information architecture',
+  //             'Implementing responsive design across diverse user devices',
+  //             'Ensuring smooth migration without disrupting user experience'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Design Process',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Conducted comprehensive audit of existing website performance and usability',
+  //             'Analyzed user behavior and identified conversion bottlenecks',
+  //             'Developed wireframes and prototypes for improved layouts',
+  //             'Created responsive design system supporting mobile-first approach'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Results & Success Metrics',
+  //       body: 'The redesign increased conversion rate by 35%, reduced bounce rate by 40%, improved page load speed by 60%, and achieved 95+ mobile usability scores.'
+  //     }
+  //   ],
+  //   methodology: [
+  //     {
+  //       title: 'Audit & Analysis',
+  //       body: 'We conducted comprehensive site audits, analyzed user behavior data, identified conversion bottlenecks, and compiled findings in detailed improvement recommendations.'
+  //     },
+  //     {
+  //       title: 'Strategy & Planning',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Defined redesign goals and success metrics',
+  //             'Prioritized improvements based on impact and effort',
+  //             'Planned information architecture changes',
+  //             'Established timeline and resource requirements'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Design & Development',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Created mobile-first responsive design system',
+  //             'Designed modern UI components and patterns',
+  //             'Developed optimized front-end code',
+  //             'Integrated with backend systems and content management'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Testing & Launch',
+  //       body: 'We conducted extensive QA testing across browsers and devices, performed A/B testing on key pages, monitored performance metrics post-launch, and implemented improvements based on user feedback.'
+  //     }
+  //   ],
+  //   category: 'Code',
+  // },
   {
     id: 12,
     backgroundColor: '#E8E8FC',
@@ -2928,232 +2928,232 @@ export const worksData = [
     ],
     category: 'Industrial',
   },
-  {
-    id: 14,
-    backgroundColor: '#E8FCE8',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
-    title: 'Project Fourteen - Industrial design pr-3',
-    timeline: '2022',
-    team: '2 Designers',
-    role: 'Lead Designer',
-    heroImage: '/images/project-14/14-hero.webp',
-    sections: [
-      {
-        id: 1,
-        title: 'Research',
-        subtitle: 'Market Analysis',
-        body: 'We researched market trends and competitor packaging to identify opportunities.',
-        image: '/images/project-14/section-1.webp',
-        caption: 'add caption',
-      },
-      {
-        id: 2,
-        title: 'Design',
-        subtitle: 'Creating Package Design',
-        body: 'An eye-catching package design was created that communicates brand values and product benefits.',
-        image: '/images/project-14/section-2.webp',
-        caption: 'add caption',
-      },
-      {
-        id: 3,
-        title: 'Production',
-        subtitle: 'Manufacturing Partnership',
-        body: 'We worked with manufacturers to ensure the design was produced to the highest standards.',
-        image: '/images/project-14/section-3.webp',
-        caption: 'add caption',
-      },
-    ],
-    summary: [
-      {
-        title: 'Project Goals',
-        body: 'Design compelling package design that captures shelf attention, communicates brand identity and product benefits, and differentiates from competitor offerings.'
-      },
-      {
-        title: 'Key Challenges',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Creating design that stands out on crowded retail shelves',
-              'Communicating product benefits within space constraints',
-              'Balancing aesthetic appeal with practical manufacturability',
-              'Ensuring design works across product line variations'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Design Process',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Conducted retail environment analysis and competitor research',
-              'Explored multiple design directions and messaging approaches',
-              'Iterated on typography, color, and graphic treatments',
-              'Tested designs in simulated retail environments'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Results & Success Metrics',
-        body: 'The packaging design increased brand shelf presence by 65%, contributed to 30% sales increase within 6 months, won packaging design award, and received positive consumer feedback.'
-      }
-    ],
-    methodology: [
-      {
-        title: 'Market & Retail Research',
-        body: 'We analyzed retail environments, studied competitor packaging, researched target audience preferences, and identified design opportunities and constraints.'
-      },
-      {
-        title: 'Design Direction & Exploration',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Explored multiple visual directions and messaging strategies',
-              'Developed typography and color palette concepts',
-              'Created mock-ups and simulations for retail evaluation',
-              'Tested legibility and shelf presence of designs'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Refinement & Finalization',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Refined winning design based on feedback and testing',
-              'Optimized design for various package sizes and formats',
-              'Prepared production-ready artwork and specifications',
-              'Ensured designs meet regulatory and safety requirements'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Production & Launch',
-        body: 'We coordinated with manufacturers to ensure production quality, conducted pre-production approvals, managed rollout to retail channels, and monitored in-market performance.'
-      }
-    ],
-    category: 'Industrial',
-  },
-  {
-    id: 15,
-    backgroundColor: '#FCF8E8',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
-    title: 'Project Fifteen - Industrial design pr-4',
-    timeline: '2023-2024',
-    team: '6 Developers, 2 Designers',
-    role: 'Architecture Lead',
-    heroImage: '/images/project-15/15-hero.webp',
-    sections: [
-      {
-        id: 1,
-        title: 'Architecture',
-        subtitle: 'System Design',
-        body: 'We designed a scalable, microservices-based architecture for enterprise use.',
-        image: '/images/project-15/section-1.webp',
-        caption: 'add caption',
-      },
-      {
-        id: 2,
-        title: 'Development',
-        subtitle: 'Building the Platform',
-        body: 'A robust platform was developed with comprehensive features for enterprise customers.',
-        image: '/images/project-15/section-2.webp',
-        caption: 'add caption',
-      },
-      {
-        id: 3,
-        title: 'Scaling',
-        subtitle: 'Growing with Users',
-        body: 'The platform was designed to scale efficiently as the user base grew.',
-        image: '/images/project-15/section-3.webp',
-        caption: 'add caption',
-      },
-    ],
-    summary: [
-      {
-        title: 'Project Goals',
-        body: 'Build a scalable, enterprise-grade software platform that delivers comprehensive functionality, seamless user experience, and reliable performance at scale.'
-      },
-      {
-        title: 'Key Challenges',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Designing architecture that scales to millions of users and requests',
-              'Balancing feature richness with system simplicity and maintainability',
-              'Ensuring security and data privacy for enterprise customers',
-              'Managing technical debt while meeting aggressive delivery timelines'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Design Process',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Conducted user research with target enterprise customers',
-              'Designed microservices architecture for scalability and flexibility',
-              'Planned feature prioritization and phased rollout strategy',
-              'Established DevOps and deployment pipelines'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Results & Success Metrics',
-        body: 'The platform served 500K+ active users with 99.99% uptime SLA, processed 100M+ transactions monthly, reduced customer support tickets by 60%, and achieved industry-leading performance benchmarks.'
-      }
-    ],
-    methodology: [
-      {
-        title: 'Requirements & Architecture',
-        body: 'We gathered enterprise requirements, designed microservices-based architecture, planned database and caching strategies, and established security frameworks.'
-      },
-      {
-        title: 'Core Platform Development',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Built authentication and authorization systems',
-              'Developed core business logic and data models',
-              'Implemented real-time data synchronization',
-              'Created comprehensive API layer for integrations'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Performance & Infrastructure',
-        body: [
-          {
-            type: 'list',
-            items: [
-              'Optimized database queries and indexing strategies',
-              'Implemented caching layers and CDN integration',
-              'Set up load balancing and auto-scaling infrastructure',
-              'Established monitoring and alerting systems'
-            ]
-          }
-        ]
-      },
-      {
-        title: 'Testing & Operations',
-        body: 'We conducted extensive QA testing, load testing for scale validation, security audits and penetration testing, and implemented continuous monitoring and incident response procedures.'
-      }
-    ],
-    category: 'Industrial',
-  },
+  // {
+  //   id: 14,
+  //   backgroundColor: '#E8FCE8',
+  //   projectLink: 'https://calypsosun.com',
+  //   projectLinkText: 'visit calypsosun.com',
+  //   title: 'Project Fourteen - Industrial design pr-3',
+  //   timeline: '2022',
+  //   team: '2 Designers',
+  //   role: 'Lead Designer',
+  //   heroImage: '/images/project-14/14-hero.webp',
+  //   sections: [
+  //     {
+  //       id: 1,
+  //       title: 'Research',
+  //       subtitle: 'Market Analysis',
+  //       body: 'We researched market trends and competitor packaging to identify opportunities.',
+  //       image: '/images/project-14/section-1.webp',
+  //       caption: 'add caption',
+  //     },
+  //     {
+  //       id: 2,
+  //       title: 'Design',
+  //       subtitle: 'Creating Package Design',
+  //       body: 'An eye-catching package design was created that communicates brand values and product benefits.',
+  //       image: '/images/project-14/section-2.webp',
+  //       caption: 'add caption',
+  //     },
+  //     {
+  //       id: 3,
+  //       title: 'Production',
+  //       subtitle: 'Manufacturing Partnership',
+  //       body: 'We worked with manufacturers to ensure the design was produced to the highest standards.',
+  //       image: '/images/project-14/section-3.webp',
+  //       caption: 'add caption',
+  //     },
+  //   ],
+  //   summary: [
+  //     {
+  //       title: 'Project Goals',
+  //       body: 'Design compelling package design that captures shelf attention, communicates brand identity and product benefits, and differentiates from competitor offerings.'
+  //     },
+  //     {
+  //       title: 'Key Challenges',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Creating design that stands out on crowded retail shelves',
+  //             'Communicating product benefits within space constraints',
+  //             'Balancing aesthetic appeal with practical manufacturability',
+  //             'Ensuring design works across product line variations'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Design Process',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Conducted retail environment analysis and competitor research',
+  //             'Explored multiple design directions and messaging approaches',
+  //             'Iterated on typography, color, and graphic treatments',
+  //             'Tested designs in simulated retail environments'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Results & Success Metrics',
+  //       body: 'The packaging design increased brand shelf presence by 65%, contributed to 30% sales increase within 6 months, won packaging design award, and received positive consumer feedback.'
+  //     }
+  //   ],
+  //   methodology: [
+  //     {
+  //       title: 'Market & Retail Research',
+  //       body: 'We analyzed retail environments, studied competitor packaging, researched target audience preferences, and identified design opportunities and constraints.'
+  //     },
+  //     {
+  //       title: 'Design Direction & Exploration',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Explored multiple visual directions and messaging strategies',
+  //             'Developed typography and color palette concepts',
+  //             'Created mock-ups and simulations for retail evaluation',
+  //             'Tested legibility and shelf presence of designs'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Refinement & Finalization',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Refined winning design based on feedback and testing',
+  //             'Optimized design for various package sizes and formats',
+  //             'Prepared production-ready artwork and specifications',
+  //             'Ensured designs meet regulatory and safety requirements'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Production & Launch',
+  //       body: 'We coordinated with manufacturers to ensure production quality, conducted pre-production approvals, managed rollout to retail channels, and monitored in-market performance.'
+  //     }
+  //   ],
+  //   category: 'Industrial',
+  // },
+  // {
+  //   id: 15,
+  //   backgroundColor: '#FCF8E8',
+  //   projectLink: 'https://calypsosun.com',
+  //   projectLinkText: 'visit calypsosun.com',
+  //   title: 'Project Fifteen - Industrial design pr-4',
+  //   timeline: '2023-2024',
+  //   team: '6 Developers, 2 Designers',
+  //   role: 'Architecture Lead',
+  //   heroImage: '/images/project-15/15-hero.webp',
+  //   sections: [
+  //     {
+  //       id: 1,
+  //       title: 'Architecture',
+  //       subtitle: 'System Design',
+  //       body: 'We designed a scalable, microservices-based architecture for enterprise use.',
+  //       image: '/images/project-15/section-1.webp',
+  //       caption: 'add caption',
+  //     },
+  //     {
+  //       id: 2,
+  //       title: 'Development',
+  //       subtitle: 'Building the Platform',
+  //       body: 'A robust platform was developed with comprehensive features for enterprise customers.',
+  //       image: '/images/project-15/section-2.webp',
+  //       caption: 'add caption',
+  //     },
+  //     {
+  //       id: 3,
+  //       title: 'Scaling',
+  //       subtitle: 'Growing with Users',
+  //       body: 'The platform was designed to scale efficiently as the user base grew.',
+  //       image: '/images/project-15/section-3.webp',
+  //       caption: 'add caption',
+  //     },
+  //   ],
+  //   summary: [
+  //     {
+  //       title: 'Project Goals',
+  //       body: 'Build a scalable, enterprise-grade software platform that delivers comprehensive functionality, seamless user experience, and reliable performance at scale.'
+  //     },
+  //     {
+  //       title: 'Key Challenges',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Designing architecture that scales to millions of users and requests',
+  //             'Balancing feature richness with system simplicity and maintainability',
+  //             'Ensuring security and data privacy for enterprise customers',
+  //             'Managing technical debt while meeting aggressive delivery timelines'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Design Process',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Conducted user research with target enterprise customers',
+  //             'Designed microservices architecture for scalability and flexibility',
+  //             'Planned feature prioritization and phased rollout strategy',
+  //             'Established DevOps and deployment pipelines'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Results & Success Metrics',
+  //       body: 'The platform served 500K+ active users with 99.99% uptime SLA, processed 100M+ transactions monthly, reduced customer support tickets by 60%, and achieved industry-leading performance benchmarks.'
+  //     }
+  //   ],
+  //   methodology: [
+  //     {
+  //       title: 'Requirements & Architecture',
+  //       body: 'We gathered enterprise requirements, designed microservices-based architecture, planned database and caching strategies, and established security frameworks.'
+  //     },
+  //     {
+  //       title: 'Core Platform Development',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Built authentication and authorization systems',
+  //             'Developed core business logic and data models',
+  //             'Implemented real-time data synchronization',
+  //             'Created comprehensive API layer for integrations'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Performance & Infrastructure',
+  //       body: [
+  //         {
+  //           type: 'list',
+  //           items: [
+  //             'Optimized database queries and indexing strategies',
+  //             'Implemented caching layers and CDN integration',
+  //             'Set up load balancing and auto-scaling infrastructure',
+  //             'Established monitoring and alerting systems'
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       title: 'Testing & Operations',
+  //       body: 'We conducted extensive QA testing, load testing for scale validation, security audits and penetration testing, and implemented continuous monitoring and incident response procedures.'
+  //     }
+  //   ],
+  //   category: 'Industrial',
+  // },
 ];
