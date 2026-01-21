@@ -2412,7 +2412,7 @@ export const worksData = [
             ]
           },
         ],
-        image: '/images/project-12/section-1.webp',
+        image: '/images/project-10/10-1.webp',
         caption: 'This phase ensured the problem was framed not as a purely aesthetic redesign, but as a performance-driven industrial challenge.',
       },
       {
@@ -2435,7 +2435,7 @@ export const worksData = [
             ]
           },
         ],
-        image: '/images/project-12/section-2.webp',
+        image: '',
         caption: 'Sketching allowed fast iteration before committing to CAD, helping filter ideas based on feasibility and functional logic.',
       },
       {
@@ -2457,7 +2457,7 @@ export const worksData = [
               'Evaluating manufacturability constraints early in the process',
             ]
           },
-        ],        image: '/images/project-12/section-3.webp',
+        ],        image: '/images/project-10/10-2.webp',
         caption: 'This stage bridged creative intent with engineering reality, allowing performance assumptions to be tested digitally before prototyping.',
       },
        {
@@ -2479,7 +2479,7 @@ export const worksData = [
               'Efficiency outcome: These changes resulted in 25% less washing liquid consumption without compromising cleaning effectiveness',
             ]
           },
-        ],        image: '/images/project-12/section-3.webp',
+        ],        image: '/images/project-10/10-3.webp',
         caption: 'This phase demonstrated how small geometric decisions could produce measurable operational impact.',
       },
       {
@@ -2502,7 +2502,7 @@ export const worksData = [
             ]
           },
         ],        
-        image: '/images/project-12/section-3.webp',
+        image: '/images/project-10/10-4.webp',
         caption: 'Testing insights fed back into final CAD refinements, ensuring the design was both practical and production-ready.',
       },
       {
@@ -2520,8 +2520,16 @@ export const worksData = [
             ]
           },
         ],        
-        image: '',
-        caption: 'Testing insights fed back into final CAD refinements, ensuring the design was both practical and production-ready.',
+        images: [
+          {
+            src: '/images/project-10/10-6.webp',
+            caption: ''
+          },
+          {
+            src: '/images/project-10/10-5.webp',
+            caption: 'Testing insights fed back into final CAD refinements, ensuring the design was both practical and production-ready.'
+          }
+        ],
       },
     ],
     summary: [
@@ -2632,7 +2640,7 @@ export const worksData = [
     timeline: '2021',
     team: '4 designers, 2 engineers',
     role: 'Design Lead',
-    heroImage: '/images/project-11/11.hero.webp',
+    heroImage: '/images/project-11/11-hero.webp',
     sections: [
       {
         id: 1,
@@ -2655,7 +2663,7 @@ export const worksData = [
             ]
           },
         ],
-        image: '/images/project-12/section-1.webp',
+        image: '',
         caption: 'This phase ensured alignment between business goals, technical constraints, and design direction.',
       },
       {
@@ -2678,7 +2686,7 @@ export const worksData = [
             ]
           },
         ],
-        image: '/images/project-12/section-2.webp',
+        image: '',
         caption: 'Sketching enabled fast iteration before committing to mechanical constraints.',
       },
       {
@@ -2700,7 +2708,7 @@ export const worksData = [
               'Proportion and visual balance of the overall system',
             ]
           },
-        ],        image: '/images/project-12/section-3.webp',
+        ],        image: '/images/project-11/11-1.webp',
         caption: 'This stage connected aesthetic intent with mechanical and spatial reality.',
       },
        {
@@ -2722,7 +2730,7 @@ export const worksData = [
               'Organic motion expressed through mechanical joints',
             ]
           },
-        ],        image: '/images/project-12/section-3.webp',
+        ],        image: '/images/project-11/11-2.webp',
         caption: 'This biomimetic approach helped achieve both functional flexibility and a distinctive visual character.',
       },
       {
@@ -2745,7 +2753,7 @@ export const worksData = [
             ]
           },
         ],        
-        image: '/images/project-12/section-3.webp',
+        image: '/images/project-11/11-3.webp',
         caption: 'This configuration allowed precise positioning while maintaining structural stability and ease of adjustment.',
       },
       {
@@ -2769,7 +2777,7 @@ export const worksData = [
             ]
           },
         ],        
-        image: '/images/project-12/section-3.webp',
+        image: '/images/project-11/11-4.webp',
         caption: 'Controls were grouped by frequency and function, ensuring quick access and reducing cognitive load during operation.',
       },
       {
@@ -2792,7 +2800,7 @@ export const worksData = [
             ]
           },
         ],        
-        image: '/images/project-12/section-3.webp',
+        image: '/images/project-11/11-5.webp',
         caption: 'Each iteration informed refinements in form, mechanism, and interface layout.',
       },
       {
