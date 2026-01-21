@@ -75,6 +75,18 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .page-container {
+    margin-top: 0;
+  }
+
+  .page-container h1 {
+    margin-top: 6rem !important;
+  }
+
   .work-list-grid {
     grid-template-columns: 1fr;
   }
