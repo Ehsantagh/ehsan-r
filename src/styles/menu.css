@@ -179,6 +179,11 @@
     backdrop-filter: blur(10px);
   }
 
+  .menu-container.contact-mode {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+  }
+
   .menu-ladder {
     width: 150.15px;
     padding: 0;

@@ -171,6 +171,8 @@
 @media (max-width: 768px) {
   .contact-page {
     padding: 1.5rem;
+    padding-top: 4rem;
+    background: #000000;
   }
 
   .contact-content {
@@ -211,6 +213,8 @@
 @media (max-width: 480px) {
   .contact-page {
     padding: 1rem;
+    padding-top: 10rem;
+    background: #000000;
   }
 
   .contact-content {
