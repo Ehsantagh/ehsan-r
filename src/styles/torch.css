@@ -138,8 +138,23 @@
 }
 
 @media (max-width: 480px) {
+  .torch-page {
+    padding: 0;
+    height: 100vh;
+    overflow: visible;
+  }
+
   .torch-container {
-    max-width: 400px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    overflow: visible;
+  }
+
+  .torch-triangle {
+    width: 300vmax;
+    height: 300vmax;
   }
 
   .torch-image {
@@ -148,6 +163,32 @@
   }
 
   .small-image-item {
-    width: 32%;
+    width: 20%;
+  }
+
+  /* Circular layout around center torch image on mobile */
+  .small-image-item:nth-child(1) {
+    top: 35%;
+    left: 50%;
+  }
+
+  .small-image-item:nth-child(2) {
+    top: 45%;
+    left: 20%;
+  }
+
+  .small-image-item:nth-child(3) {
+    top: 45%;
+    left: 80%;
+  }
+
+  .small-image-item:nth-child(4) {
+    top: 65%;
+    left: 25%;
+  }
+
+  .small-image-item:nth-child(5) {
+    top: 65%;
+    left: 75%;
   }
 }
