@@ -13,6 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
 a {
   font-weight: 500;
   color: #521500;
@@ -20,15 +34,6 @@ a {
 }
 a:hover {
   color: #3d0f00;
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
-}
-
-#root {
-  width: 100%;
 }
 
 h1 {

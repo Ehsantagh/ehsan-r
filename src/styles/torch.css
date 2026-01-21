@@ -141,7 +141,8 @@
   .torch-page {
     padding: 0;
     height: 100vh;
-    overflow: visible;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .torch-container {
