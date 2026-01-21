@@ -84,7 +84,7 @@ html {
 /* Subtitle */
 .intro-subtitle {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #000;
   text-align: center;
@@ -178,7 +178,10 @@ html {
   }
 
   .intro-paragraph {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    width: 65%;
+    padding-left: auto;
+    padding-right: auto;
   }
 }
 
@@ -201,15 +204,18 @@ html {
   }
 
   .intro-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .intro-subtitle {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
   }
 
   .intro-paragraph {
     font-size: 0.9rem;
+    width: 80%;
+    padding-left: auto;
+    padding-right: auto;
   }
 
   .start-button {

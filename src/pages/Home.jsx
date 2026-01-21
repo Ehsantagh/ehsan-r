@@ -58,7 +58,7 @@ export default function Home() {
         {/* Start Button - Appears after 7 seconds */}
         {showButton && (
           <button className="start-button" onClick={handleStartButton}>
-            Click to start →
+            Know me →
           </button>
         )}
       </div>
