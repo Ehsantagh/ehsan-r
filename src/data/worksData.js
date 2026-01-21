@@ -2389,7 +2389,7 @@ export const worksData = [
     timeline: '2018-2019',
     team: '4 designers, 1 engineer',
     role: 'Design Lead',
-    heroImage: '/images/project-12/12-hero.webp',
+    heroImage: '/images/project-10/10-hero.webp',
     sections: [
       {
         id: 1,
@@ -2632,7 +2632,7 @@ export const worksData = [
     timeline: '2021',
     team: '4 designers, 2 engineers',
     role: 'Design Lead',
-    heroImage: '/images/project-13/13-hero.webp',
+    heroImage: '/images/project-11/11.hero.webp',
     sections: [
       {
         id: 1,
