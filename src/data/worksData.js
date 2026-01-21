@@ -2383,227 +2383,547 @@ export const worksData = [
   {
     id: 12,
     backgroundColor: '#E8E8FC',
-    projectLink: 'https://ekasdesign.com',
+    projectLink: 'https://ekasdesign.com/en/portfolio/endoscope-washer-machine/',
     projectLinkText: 'visit ekasdesign.com',
-    title: 'Project Twelve - Industrial design pr-1',
-    timeline: '2022-2023',
-    team: '4 Engineers',
-    role: 'Hardware Lead',
+    title: 'Optimising Medical Washing Through Design',
+    timeline: '2018-2019',
+    team: '4 designers, 1 engineer',
+    role: 'Design Lead',
     heroImage: '/images/project-12/12-hero.webp',
     sections: [
       {
         id: 1,
-        title: 'Concept',
-        subtitle: 'Innovation in IoT',
-        body: 'We conceptualized an innovative IoT product that solves real-world problems.',
+        title: 'Project Definition',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'The project began with clarifying the brief, aligning technical constraints with business and brand goals, and gathering data from existing products. Key activities:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Stakeholder interviews to understand operational pain points',
+              'Analysis of existing sink performance and liquid consumption',
+              'Review of brand language and product family constraints',
+              'Defining measurable success criteria (liquid reduction, manufacturability, visual coherence)',
+            ]
+          },
+        ],
         image: '/images/project-12/section-1.webp',
-        caption: 'add caption',
+        caption: 'This phase ensured the problem was framed not as a purely aesthetic redesign, but as a performance-driven industrial challenge.',
       },
       {
         id: 2,
-        title: 'Engineering',
-        subtitle: 'Technical Implementation',
-        body: 'The product was engineered using cutting-edge IoT technologies and wireless protocols.',
+        title: 'Ideation & Concept Exploration',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'An extensive ideation phase explored form, volume distribution, and flow logic through rapid sketching. Highlights:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Over 100 hand sketches exploring geometry, flow paths, and user interaction',
+              'Early focus on simplifying the sink into a single-part component',
+              'Parallel exploration of conservative vs. progressive design directions',
+            ]
+          },
+        ],
         image: '/images/project-12/section-2.webp',
-        caption: 'add caption',
+        caption: 'Sketching allowed fast iteration before committing to CAD, helping filter ideas based on feasibility and functional logic.',
       },
       {
         id: 3,
-        title: 'Testing',
-        subtitle: 'Quality Assurance',
-        body: 'Rigorous testing in various environments ensured reliability and performance.',
+        title: '3D Concepts & CAD Development',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'Selected concepts were translated into SolidWorks models with realistic dimensions, wall thicknesses, and proportions. Focus areas:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Accurate volumetric modelling to calculate liquid usage',
+              'Maintaining compatibility with existing machine architecture',
+              'Evaluating manufacturability constraints early in the process',
+            ]
+          },
+        ],        image: '/images/project-12/section-3.webp',
+        caption: 'This stage bridged creative intent with engineering reality, allowing performance assumptions to be tested digitally before prototyping.',
+      },
+       {
+        id: 4,
+        title: 'Sink Redesign & Performance Optimisation',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'The core innovation of the project was the functional redesign of the sink. Key improvements:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Volume optimisation: Defined three internal sink levels to minimise unused volume while preserving washing performance',
+              'Drainage redesign: Reworked geometry to maintain a minimum 5° slope across drainage paths',
+              'Efficiency outcome: These changes resulted in 25% less washing liquid consumption without compromising cleaning effectiveness',
+            ]
+          },
+        ],        image: '/images/project-12/section-3.webp',
+        caption: 'This phase demonstrated how small geometric decisions could produce measurable operational impact.',
+      },
+      {
+        id: 5,
+        title: 'Prototyping & Testing',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'Multiple prototyping techniques were used to validate form, function, and manufacturability. Prototype stages:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Styrofoam prototype: for rapid form and volume evaluation',
+              'Vacuum-formed prototype: to assess surface quality and production logic',
+              'Functional prototype: to test drainage behaviour and liquid usage in real conditions',
+            ]
+          },
+        ],        
         image: '/images/project-12/section-3.webp',
-        caption: 'add caption',
+        caption: 'Testing insights fed back into final CAD refinements, ensuring the design was both practical and production-ready.',
+      },
+      {
+        id: 6,
+        title: 'Outcome & Recognition',
+        subtitle: '',
+        body: [
+          {
+            type: 'list',
+            items: [
+              '25% reduction in washing liquid consumption',
+              'Single-part sink design simplifying production',
+              'Visual refresh aligned with next-generation product direction',
+              'LICC 2022 Finalist – London International Creative Competition',
+            ]
+          },
+        ],        
+        image: '',
+        caption: 'Testing insights fed back into final CAD refinements, ensuring the design was both practical and production-ready.',
       },
     ],
     summary: [
       {
-        title: 'Project Goals',
-        body: 'Develop an innovative IoT product that leverages cutting-edge wireless technologies to solve real-world problems and deliver value to users and enterprises.'
+        title: 'Project summary',
+        body: 'This project focused on redesigning a medical washing device sink for Tosan Tajhiz, with the goal of improving functional efficiency while remaining fully compatible with existing systems and manufacturing constraints. As a critical component of medical cleaning equipment, the sink directly impacts washing performance, liquid consumption, and reliability, requiring the redesign to address volume distribution, drainage behaviour, and integration within the current machine architecture. In parallel, the project introduced a next-generation visual language intended to scale across future products. The design balanced a more contemporary, refined appearance with strict medical and brand requirements, ensuring continuity within the product family while supporting long-term evolution.'
       },
       {
-        title: 'Key Challenges',
+        title: 'Purpose',
         body: [
           {
             type: 'list',
             items: [
-              'Designing hardware that balances performance with power efficiency',
-              'Integrating multiple wireless protocols and sensors',
-              'Ensuring reliability and stability in diverse environmental conditions',
-              'Managing cost constraints while maintaining quality standards'
+              'Reduce washing liquid consumption',
+              'Improve functional performance of the sink and drainage system',
+              'Refresh the product’s visual identity for future product lines',
             ]
           }
         ]
       },
       {
-        title: 'Design Process',
+        title: 'Design Guidelines',
         body: [
           {
             type: 'list',
             items: [
-              'Conducted market research to identify user needs and opportunities',
-              'Prototyped multiple concepts exploring different technical approaches',
-              'Selected optimal hardware components and wireless technologies',
-              'Iterated designs based on prototype testing and feedback'
+              'Single-part sink design for manufacturability',
+              'Accurate volume control with no impact on cleaning performance',
+              'Clear alignment with existing Tosan Tajhiz product language',
+              'Functional decisions prioritised over decorative form'
             ]
           }
         ]
       },
       {
-        title: 'Results & Success Metrics',
-        body: 'The product achieved 99.5% uptime in production, passed all regulatory certifications, received strong customer feedback with 4.8/5 rating, and exceeded initial sales targets.'
+        title: 'Constraint',
+        body: [
+          {
+            type: 'list',
+            items: [
+              'Compatibility with existing internal architecture',
+              'Medical equipment standards and cleaning performance expectations',
+              'Manufacturing feasibility and cost considerations',
+            ]
+          }
+        ]
       }
     ],
     methodology: [
       {
-        title: 'Market Research & Ideation',
-        body: 'We conducted market analysis, interviewed potential users, identified key use cases, and explored technical approaches for solving identified problems.'
+        title: 'Approach',
+        body: 'An iterative, performance-driven design approach combining industrial design, volumetric analysis, and physical prototyping to validate both functional and visual decisions.'
       },
       {
-        title: 'Hardware Design & Prototyping',
+        title: 'Process',
         body: [
           {
             type: 'list',
             items: [
-              'Designed PCB layouts and selected component specifications',
-              'Built functional prototypes for concept validation',
-              'Tested power consumption and performance characteristics',
-              'Iterated designs based on prototype learnings'
+              'Brief clarification and data gathering',
+              'Large-scale sketch exploration (100+ sketches)',
+              'CAD-based concept development with realistic dimensions',
+              'Functional optimisation through geometry and drainage refinement',
+              'Progressive prototyping and testing',
             ]
           }
         ]
       },
       {
-        title: 'Integration & Firmware Development',
+        title: 'Tools & Methods',
         body: [
           {
             type: 'list',
             items: [
-              'Developed firmware for device operation and connectivity',
-              'Integrated multiple wireless protocols (WiFi, Bluetooth, cellular)',
-              'Implemented cloud connectivity and data synchronization',
-              'Created mobile and web applications for device management'
+              'Hand sketching for rapid ideation',
+              'SolidWorks for 3D modelling and volume analysis',
+              'Styrofoam prototyping for early form validation',
+              'Vacuum forming for surface and production logic testing',
+              'Functional prototyping for real-world performance evaluation',
             ]
           }
         ]
       },
       {
-        title: 'Testing & Manufacturing',
-        body: 'We conducted environmental testing, compliance validation, stress testing under various conditions, established manufacturing processes, and implemented quality control procedures.'
+        title: 'Key Consideration',
+        body: 
+    [
+          {
+            type: 'list',
+            items: [
+              'Liquid consumption targets',
+              'Drainage performance requirements',
+              'Single-part manufacturability',
+              'Brand conformity across product families',
+            ]
+          }
+        ]
       }
     ],
     category: 'Industrial',
   },
-  {
+    {
     id: 13,
-    backgroundColor: '#FCE8F8',
-    projectLink: 'https://calypsosun.com',
-    projectLinkText: 'visit calypsosun.com',
-    title: 'Project Thirteen - Industrial design pr-2',
-    timeline: '2023-2024',
-    team: '2 Designers, 3 Developers',
-    role: 'Design System Lead',
+    backgroundColor: '#E8E8FC',
+    projectLink: 'https://ekasdesign.com/en/portfolio/zino-ultrasound-device-design/',
+    projectLinkText: 'visit ekasdesign.com',
+    title: 'Ultrasound System Design: Form, Mechanism, Interface',
+    timeline: '2021',
+    team: '4 designers, 2 engineers',
+    role: 'Design Lead',
     heroImage: '/images/project-13/13-hero.webp',
     sections: [
       {
         id: 1,
-        title: 'Planning',
-        subtitle: 'Component Strategy',
-        body: 'We planned a comprehensive component library that standardizes UI elements across products.',
-        image: '/images/project-13/section-1.webp',
-        caption: 'add caption',
+        title: 'Project Definition',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'The project started with clarifying the brief and gathering technical data related to existing electronics, internal layouts, and usage scenarios. Key activities:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Analysis of current SIMUT product range',
+              'Mapping electronic components and spatial requirements',
+              'Identifying ergonomic and clinical usage needs',
+              'Defining differentiation goals for the mid-range line',
+            ]
+          },
+        ],
+        image: '/images/project-12/section-1.webp',
+        caption: 'This phase ensured alignment between business goals, technical constraints, and design direction.',
       },
       {
         id: 2,
-        title: 'Creation',
-        subtitle: 'Building Components',
-        body: 'Reusable, accessible components were created with thorough documentation.',
-        image: '/images/project-13/section-2.webp',
-        caption: 'add caption',
+        title: 'Ideation & Concept Exploration',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'Ideation focused on exploring form, proportions, and arm configurations through extensive sketching. Highlights:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Over 100 sketches exploring enclosure geometry and arm structures',
+              'Parallel exploration of compact vs. expressive forms',
+              'Early consideration of balance, reach, and stability',
+            ]
+          },
+        ],
+        image: '/images/project-12/section-2.webp',
+        caption: 'Sketching enabled fast iteration before committing to mechanical constraints.',
       },
       {
         id: 3,
-        title: 'Adoption',
-        subtitle: 'Team Integration',
-        body: 'Teams across the organization adopted the component library, improving efficiency and consistency.',
-        image: '/images/project-13/section-3.webp',
-        caption: 'add caption',
+        title: '3D Concepts & CAD Development',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'Selected concepts were translated into SolidWorks models with realistic dimensions and internal layouts. Focus areas:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Accurate component placement',
+              'Structural feasibility of adjustable arms',
+              'Proportion and visual balance of the overall system',
+            ]
+          },
+        ],        image: '/images/project-12/section-3.webp',
+        caption: 'This stage connected aesthetic intent with mechanical and spatial reality.',
+      },
+       {
+        id: 4,
+        title: 'Inspiration Behind the Flexible Arms',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'The display holder arms were inspired by the pelican’s neck and body structure, known for flexibility, balance, and controlled movement. Design translation:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Layered structure for smooth articulation',
+              'Gradual thickness changes to suggest strength and flexibility',
+              'Organic motion expressed through mechanical joints',
+            ]
+          },
+        ],        image: '/images/project-12/section-3.webp',
+        caption: 'This biomimetic approach helped achieve both functional flexibility and a distinctive visual character.',
+      },
+      {
+        id: 5,
+        title: 'Adjustable Arm Mechanism Design',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'The adjustable arm system was a core technical challenge. Key characteristics:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Balanced gas struts for smooth movement',
+              'Double joints enabling stability',
+              '4 degrees of freedom, 3 joints and 2 supporting legs',
+            ]
+          },
+        ],        
+        image: '/images/project-12/section-3.webp',
+        caption: 'This configuration allowed precise positioning while maintaining structural stability and ease of adjustment.',
+      },
+      {
+        id: 6,
+        title: 'Control Panel Interface Design',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'The control panel was designed to support efficient clinical workflows. Interface elements included:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Keyboard layout',
+              'TCG and LCG controls',
+              'Trackball',
+              'Clipper and auxiliary inputs',
+            ]
+          },
+        ],        
+        image: '/images/project-12/section-3.webp',
+        caption: 'Controls were grouped by frequency and function, ensuring quick access and reducing cognitive load during operation.',
+      },
+      {
+        id: 7,
+        title: 'Prototyping & Testing',
+        subtitle: '',
+        body: [
+          {
+            type: 'paragraph',
+            content: [
+              'Multiple prototype stages were used to validate design decisions. Prototype stages:'
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Foam model: ergonomic and form validation',
+              'Functional model: testing arm movement, balance, and reach',
+              'Production model: final fit, finish, and manufacturability review',
+            ]
+          },
+        ],        
+        image: '/images/project-12/section-3.webp',
+        caption: 'Each iteration informed refinements in form, mechanism, and interface layout.',
+      },
+      {
+        id: 8,
+        title: 'Outcome & Takeaways',
+        subtitle: '',
+        body: [
+          {
+            type: 'list',
+            items: [
+              'Distinct and scalable form factor for the mid-range product line',
+              'Compact and efficient internal organisation',
+              'Flexible, stable display arm with intuitive adjustment',
+              'Strong alignment with SIMUT brand language',
+            ]
+          },
+          {
+            type: 'paragraph',
+            content: [
+              'Key Takeaways',
+            ]
+          },
+          {
+            type: 'list',
+            items: [
+              'Early mechanical thinking prevents late-stage compromises',
+              'Biomimicry can guide both form and function',
+              'Close alignment between interface design and physical ergonomics is critical in medical devices',
+            ]
+          },
+        ],        
+        image: '',
+        caption: '',
       },
     ],
     summary: [
       {
-        title: 'Project Goals',
-        body: 'Develop a comprehensive UI component library that standardizes design across products, improves development efficiency, and ensures consistency in user experience.'
+        title: 'Project summary',
+        body: 'This project involved the design of a mid-range ultrasonic medical device for Med Fanavaran Co (SIMUT), with the objective of defining a distinct and scalable form factor while reusing existing electronic components. The challenge was to organise complex hardware, controls, and mechanical systems within a compact enclosure without compromising usability, ergonomics, or brand consistency. The design needed to clearly differentiate this product line from other SIMUT devices while remaining recognisably part of the same family. The solution combined system-level industrial design, mechanical reasoning, and interface layout design. A flexible display arm inspired by the structure of a pelican’s neck introduced both functional adaptability and a unique visual identity, while the control panel was carefully arranged to support efficient clinical workflows. Through iterative sketching, CAD development, and multiple prototyping stages, the final design balanced compactness, usability, and manufacturability, resulting in a coherent product that aligned technical constraints with a refined, purpose-driven form.'
       },
       {
-        title: 'Key Challenges',
+        title: 'Purpose',
         body: [
           {
             type: 'list',
             items: [
-              'Creating flexible components that work across diverse product contexts',
-              'Balancing consistency with customization needs',
-              'Achieving designer and developer alignment on component specifications',
-              'Driving adoption across multiple teams and products'
+              'Establish a recognisable visual identity for the new mid-range product line',
+              'Integrate current electronic components without redesigning internal hardware',
+              'Improve ergonomics and flexibility for clinical use',
             ]
           }
         ]
       },
       {
-        title: 'Design Process',
+        title: 'Design Guidelines',
         body: [
           {
             type: 'list',
             items: [
-              'Audited existing components across all products to identify patterns',
-              'Designed flexible, modular component architecture',
-              'Created detailed component specifications and documentation',
-              'Built interactive component showcase and usage examples'
+              'Clear differentiation from high-end and entry-level models',
+              'Compact, well-organised internal layout',
+              'Strong alignment with SIMUT’s brand language',
+              'Functional clarity over decorative complexity'
             ]
           }
         ]
       },
       {
-        title: 'Results & Success Metrics',
-        body: 'The component library reduced development time by 40%, improved design consistency across products by 85%, increased team velocity, and was adopted by 95% of teams within 6 months.'
+        title: 'Constraint',
+        body: [
+          {
+            type: 'list',
+            items: [
+              'Fixed electronic components and layouts',
+              'Limited internal volume',
+              'Mechanical reliability requirements for adjustable parts',
+              'Medical device usability and safety standards',
+            ]
+          }
+        ]
       }
     ],
     methodology: [
       {
-        title: 'Audit & Planning',
-        body: 'We audited existing components across products, identified patterns and gaps, prioritized component types for library, and planned development phases.'
+        title: 'Approach',
+        body: 'A system-level industrial design approach combining form exploration, mechanical reasoning, and interface layout design, validated through iterative prototyping and testing.'
       },
       {
-        title: 'Component Design & Specification',
+        title: 'Process',
         body: [
           {
             type: 'list',
             items: [
-              'Designed flexible, reusable component architectures',
-              'Specified component variants and props structure',
-              'Created detailed design specifications and usage guidelines',
-              'Ensured accessibility compliance (WCAG) across all components'
+              'Brief clarification and data collection',
+              'Large-scale ideation and sketching',
+              'CAD-based concept development',
+              'Mechanism design and interface definition',
+              'Progressive prototyping and refinement',
             ]
           }
         ]
       },
       {
-        title: 'Development & Documentation',
+        title: 'Tools & Methods',
         body: [
           {
             type: 'list',
             items: [
-              'Implemented components in code with multiple framework support',
-              'Created comprehensive component documentation with examples',
-              'Built interactive component explorer and showcase',
-              'Established component versioning and maintenance processes'
+              'Hand sketching for rapid exploration',
+              'SolidWorks for 3D modelling and mechanical validation',
+              'Foam modelling for ergonomic testing',
+              'Functional prototypes for mechanism evaluation',
+              'Production models for final validation',
             ]
           }
         ]
       },
       {
-        title: 'Adoption & Refinement',
-        body: 'We conducted team training sessions, gathered feedback from early adopters, refined components based on usage patterns, and continuously updated the library.'
+        title: 'Key Consideration',
+        body: 
+    [
+          {
+            type: 'list',
+            items: [
+              'Reuse of existing electronics',
+              'Compact enclosure requirements',
+              'Brand conformity across product lines',
+              'Mechanical durability and usability',
+            ]
+          }
+        ]
       }
     ],
     category: 'Industrial',
