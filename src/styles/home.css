@@ -152,10 +152,16 @@ html {
 @media (max-width: 768px) {
   .home-page {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
 
   .intro-box {
     gap: 1.5rem;
+    min-height: auto;
   }
 
   .intro-image {
