@@ -17,6 +17,7 @@ export default function Menu() {
   const location = useLocation();
   const menuRef = useRef(null);
   const isContactPage = location.pathname === '/contact';
+  const isTorchPage = location.pathname === '/torch';
 
   // Close menu when clicking anywhere outside
   useEffect(() => {
@@ -42,10 +43,10 @@ export default function Menu() {
   };
 
   return (
-    <div className={`menu-container ${isOpen ? 'open' : 'closed'} ${isContactPage ? 'contact-mode' : ''}`} ref={menuRef}>
+    <div className={`menu-container ${isOpen ? 'open' : 'closed'} ${isContactPage || isTorchPage ? 'contact-mode' : ''}`} ref={menuRef}>
       {/* Ladder Image - Clickable */}
       <div className="menu-ladder" onClick={handleLadderClick}>
-        <img src={isContactPage ? '/images/home/menu-ladder-white.png' : '/images/home/menu-ladder.png'} alt="menu ladder" />
+        <img src={isContactPage || isTorchPage ? '/images/home/menu-ladder-white.png' : '/images/home/menu-ladder.png'} alt="menu ladder" />
       </div>
 
       {/* Menu Text - Always visible */}
