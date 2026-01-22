@@ -25,6 +25,19 @@ export default function TorchPage() {
   const targetRotationRef = useRef(0);
   const targetAngleWidthRef = useRef(30);
 
+  // Prevent scrolling on mobile torch page
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      document.documentElement.classList.add('torch-mobile');
+      document.body.classList.add('torch-mobile');
+    }
+    return () => {
+      document.documentElement.classList.remove('torch-mobile');
+      document.body.classList.remove('torch-mobile');
+    };
+  }, []);
+
   // Get snap angle
   const getSnapAngle = (angle) => {
     // Normalize angle to 0-360

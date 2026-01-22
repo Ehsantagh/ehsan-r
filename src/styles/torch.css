@@ -193,3 +193,20 @@
     left: 75%;
   }
 }
+
+/* Mobile - Prevent scrolling */
+@media (max-width: 768px) {
+  .torch-page {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  html.torch-mobile,
+  body.torch-mobile {
+    overflow: hidden;
+  }
+}
