@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import { BackgroundContext } from '../App'
 import '../styles/cv.css'
 
 export default function CV() {
+  const { setBackgroundColor } = useContext(BackgroundContext)
+
+  useEffect(() => {
+    setBackgroundColor('#ffffff')
+  }, [setBackgroundColor])
+
   const handleDownload = () => {
     const link = document.createElement('a')
     link.href = '/images/Ehsan-CV.pdf'

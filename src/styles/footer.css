@@ -83,4 +83,13 @@
   .footer.white {
     margin-top: 1rem;
   }
+
+  .footer.above-fold {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 100;
+  }
 }

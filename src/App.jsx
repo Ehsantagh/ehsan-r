@@ -19,6 +19,9 @@ function AppContent() {
   const isWhiteFooter = location.pathname === '/torch' || location.pathname === '/contact';
   const [backgroundColor, setBackgroundColor] = useState('#ffffff');
 
+  // Determine if footer should stay above fold (home, expertise, about only)
+  const footerAboveFold = ['/', '/home', '/expertise', '/about'].includes(location.pathname.toLowerCase());
+
   // Apply background color to body element
   useEffect(() => {
     document.body.style.backgroundColor = backgroundColor;
@@ -41,7 +44,7 @@ function AppContent() {
           <Route path="/CV" element={<CV />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer isWhite={isWhiteFooter} backgroundColor={backgroundColor} />
+        <Footer isWhite={isWhiteFooter} backgroundColor={backgroundColor} aboveFold={footerAboveFold} />
       </>
     </BackgroundContext.Provider>
   );

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/footer.css';
 
-export default function Footer({ isWhite = false, backgroundColor = '#ffffff' }) {
+export default function Footer({ isWhite = false, backgroundColor = '#ffffff', aboveFold = false }) {
   const navigate = useNavigate();
 
   const handleMessageClick = () => {
@@ -9,7 +9,7 @@ export default function Footer({ isWhite = false, backgroundColor = '#ffffff' })
   };
 
   return (
-    <footer className={`footer ${isWhite ? 'white' : ''}`}>
+    <footer className={`footer ${isWhite ? 'white' : ''} ${aboveFold ? 'above-fold' : ''}`}>
       <div className="footer-content">
         <span className="footer-text">Coded by me in React</span>
         <span className="footer-divider">|</span>
