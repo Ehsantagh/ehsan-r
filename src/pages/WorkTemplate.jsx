@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import TextModule from '../components/TextModule';
 import Tabs from '../components/Tabs';
@@ -12,6 +13,11 @@ export default function WorkTemplate() {
   const { id } = useParams();
   const navigate = useNavigate();
   const projectId = parseInt(id);
+
+  // Scroll to top on page load or when project changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const handleCategoryChange = (category) => {
     navigate(`/worklist?category=${encodeURIComponent(category)}`);

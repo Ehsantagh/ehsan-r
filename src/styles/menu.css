@@ -175,12 +175,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .menu-container {
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     backdrop-filter: blur(10px);
   }
 
   .menu-container.contact-mode {
-    background: rgba(0, 0, 0, 0.4);
+    background: transparent;
     backdrop-filter: blur(10px);
   }
 
