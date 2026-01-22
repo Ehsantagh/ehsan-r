@@ -63,7 +63,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 24%;
+  width: 18%;
   aspect-ratio: 1;
   cursor: pointer;
   text-decoration: none;
@@ -87,33 +87,28 @@
 
 /* Position items in a circle around the center */
 .small-image-item:nth-child(1) {
-  top: calc(50% - 50%);
+  top: calc(50% - 35%);
   left: 50%;
 }
 
 .small-image-item:nth-child(2) {
-  top: calc(50% - 25%);
-  left: calc(50% + 43.3%);
+  top: calc(50% - 18%);
+  left: calc(50% + 30%);
 }
 
 .small-image-item:nth-child(3) {
-  top: calc(50% + 25%);
-  left: calc(50% + 43.3%);
+  top: calc(50% + 18%);
+  left: calc(50% + 30%);
 }
 
 .small-image-item:nth-child(4) {
-  top: calc(50% + 50%);
+  top: calc(50% + 35%);
   left: 50%;
 }
 
 .small-image-item:nth-child(5) {
-  top: calc(50% + 25%);
-  left: calc(50% - 43.3%);
-}
-
-.small-image-item:nth-child(5) {
-  top: calc(50% + 25%);
-  left: calc(50% - 43.3%);
+  top: calc(50% + 18%);
+  left: calc(50% - 30%);
 }
 
 /* Responsive Design */
