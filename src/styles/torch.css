@@ -45,7 +45,7 @@
   width: 80px;
   height: 80px;
   display: block;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+  filter: none;
 }
 
 /* Small Images Container */
@@ -74,7 +74,7 @@
 
 .small-image-item:hover {
   transform: translate(-50%, -50%) scale(1.1) !important;
-  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+  filter: none;
 }
 
 .small-image-item img {
@@ -82,7 +82,7 @@
   height: 100%;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+  filter: none;
 }
 
 /* Position items in a circle around the center */
