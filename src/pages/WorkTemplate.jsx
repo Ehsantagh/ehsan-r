@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import Navbar from '../components/Navbar';
 import TextModule from '../components/TextModule';
 import Tabs from '../components/Tabs';
@@ -7,11 +7,13 @@ import Tabs4 from '../components/Tabs4';
 import RelatedProjects from '../components/RelatedProjects';
 import { worksData } from '../data/worksData';
 import { project1Data } from '../data/project1Data';
+import { BackgroundContext } from '../App';
 import '../styles/portfolio.css';
 
 export default function WorkTemplate() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { setBackgroundColor } = useContext(BackgroundContext);
   const projectId = parseInt(id);
 
   // Scroll to top on page load or when project changes
@@ -30,6 +32,13 @@ export default function WorkTemplate() {
   } else {
     work = worksData.find(w => w.id === projectId);
   }
+
+  // Update background color when work data changes
+  useEffect(() => {
+    if (work) {
+      setBackgroundColor(work.backgroundColor || '#ffffff');
+    }
+  }, [work, setBackgroundColor]);
 
   // Helper function to render body content (string or array)
   const renderBody = (bodyContent) => {

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/footer.css';
 
-export default function Footer({ isWhite = false }) {
+export default function Footer({ isWhite = false, backgroundColor = '#ffffff' }) {
   const navigate = useNavigate();
 
   const handleMessageClick = () => {
