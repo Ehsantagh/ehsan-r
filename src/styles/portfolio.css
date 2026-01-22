@@ -87,6 +87,10 @@
     margin-top: 6rem !important;
   }
 
+  .work-header h1 {
+    font-size: 1.7rem !important;
+  }
+
   .work-list-grid {
     grid-template-columns: 1fr;
   }
