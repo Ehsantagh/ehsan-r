@@ -101,11 +101,11 @@ export default function Expertise() {
     return () => clearInterval(interval);
   }, []);
 
-  // Carousel auto-rotation every 3 seconds
+  // Carousel auto-rotation every 12 seconds
   useEffect(() => {
     const carouselInterval = setInterval(() => {
-      setCarouselIndex((prev) => (prev + 1) % 4);
-    }, 3000);
+      setCarouselIndex((prev) => prev + 1);
+    }, 12000);
 
     return () => clearInterval(carouselInterval);
   }, []);
@@ -127,10 +127,10 @@ export default function Expertise() {
     if (Math.abs(deltaX) > 50) {
       if (deltaX > 0) {
         // Swiped right - go to previous
-        setCarouselIndex((prev) => (prev - 1 + 4) % 4);
+        setCarouselIndex((prev) => prev - 1);
       } else {
         // Swiped left - go to next
-        setCarouselIndex((prev) => (prev + 1) % 4);
+        setCarouselIndex((prev) => prev + 1);
       }
     }
   };
@@ -251,7 +251,7 @@ export default function Expertise() {
               key={index}
               className="carousel-slide"
               style={{
-                transform: `translateX(calc((${index} - ${carouselIndex}) * 100%))`,
+                transform: `translateX(calc((${index} - ${carouselIndex % 4}) * 100%))`,
               }}
             >
               <img src="/images/home/expert-2.png" alt={item.title} className="carousel-image" />
@@ -272,7 +272,7 @@ export default function Expertise() {
           {EXPERTISE_DATA.map((_, index) => (
             <button
               key={index}
-              className={`carousel-dot ${index === carouselIndex ? 'active' : ''}`}
+              className={`carousel-dot ${index === carouselIndex % 4 ? 'active' : ''}`}
               onClick={() => handleIndicatorClick(index)}
               aria-label={`Go to slide ${index + 1}`}
             />
