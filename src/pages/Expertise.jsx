@@ -161,7 +161,7 @@ export default function Expertise() {
             <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
               <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                <rect x="0" y="0" width="600" height="360" fill="red" />
+                <rect x="0" y="0" width="600" height="360" fill="white" />
                 <rect x="0" y="0" width="600" height="360" fill="none" stroke="black" strokeWidth="3" />
                 <rect x="40" y="30" width="270" height="190" fill="none" stroke="black" strokeWidth="3" />
               </svg>
@@ -181,7 +181,7 @@ export default function Expertise() {
             <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
               <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                <rect x="0" y="0" width="600" height="360" fill="red" />
+                <rect x="0" y="0" width="600" height="360" fill="white" />
                 <rect x="0" y="0" width="600" height="360" fill="none" stroke="black" strokeWidth="3" />
                 <rect x="40" y="30" width="270" height="190" fill="none" stroke="black" strokeWidth="3" />
               </svg>
@@ -201,7 +201,7 @@ export default function Expertise() {
             <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
               <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                <rect x="0" y="0" width="600" height="360" fill="red" />
+                <rect x="0" y="0" width="600" height="360" fill="white" />
                 <rect x="0" y="0" width="600" height="360" fill="none" stroke="black" strokeWidth="3" />
                 <rect x="40" y="30" width="270" height="190" fill="none" stroke="black" strokeWidth="3" />
               </svg>
@@ -221,7 +221,7 @@ export default function Expertise() {
             <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
               <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                <rect x="0" y="0" width="600" height="360" fill="red" />
+                <rect x="0" y="0" width="600" height="360" fill="white" />
                 <rect x="0" y="0" width="600" height="360" fill="none" stroke="black" strokeWidth="3" />
                 <rect x="40" y="30" width="270" height="190" fill="none" stroke="black" strokeWidth="3" />
               </svg>
