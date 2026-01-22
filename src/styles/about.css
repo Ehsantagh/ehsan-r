@@ -153,4 +153,6 @@
   /* .about-page { --deco-width: calc(100% - 2rem); } */
   .about-box { padding: 1.25rem; grid-template-columns: 1fr; width: var(--deco-width); }
   .about-deco.top, .about-deco.bottom { max-height: 10vh; }
+  .pair h3 { font-size: 1.68rem; }
+  .pair p { font-size: 1.085rem; }
 }
