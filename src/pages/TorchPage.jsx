@@ -204,7 +204,7 @@ export default function TorchPage() {
               key={index}
               className="small-image-item"
               style={{ transform: 'translate(-50%, -50%)' }}
-              onClick={() => window.location.href = image.url}
+              onClick={() => navigate(image.url)}
             >
               <img src={image.src} alt={image.alt} />
             </div>
