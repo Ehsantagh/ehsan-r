@@ -32,20 +32,20 @@ html {
 
 /* Image */
 .intro-image {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f0f0f0;
+  background: transparent;
 }
 
 .intro-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Title */
