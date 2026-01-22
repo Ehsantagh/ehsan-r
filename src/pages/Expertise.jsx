@@ -46,6 +46,9 @@ export default function Expertise() {
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [dragRotation, setDragRotation] = useState(0);
+  const [carouselIndex, setCarouselIndex] = useState(0);
+  const [isCarouselDragging, setIsCarouselDragging] = useState(false);
+  const [carouselDragStart, setCarouselDragStart] = useState({ x: 0, y: 0 });
 
   const handleCubeClick = () => {
     setRotation((prev) => prev + 90);
@@ -98,6 +101,44 @@ export default function Expertise() {
     return () => clearInterval(interval);
   }, []);
 
+  // Carousel auto-rotation every 3 seconds
+  useEffect(() => {
+    const carouselInterval = setInterval(() => {
+      setCarouselIndex((prev) => (prev + 1) % 4);
+    }, 3000);
+
+    return () => clearInterval(carouselInterval);
+  }, []);
+
+  const handleCarouselTouchStart = (e) => {
+    setIsCarouselDragging(true);
+    setCarouselDragStart({ x: e.touches[0].clientX, y: e.touches[0].clientY });
+  };
+
+  const handleCarouselTouchMove = (e) => {
+    if (!isCarouselDragging) return;
+  };
+
+  const handleCarouselTouchEnd = (e) => {
+    if (!isCarouselDragging) return;
+    const deltaX = e.changedTouches[0].clientX - carouselDragStart.x;
+    setIsCarouselDragging(false);
+
+    if (Math.abs(deltaX) > 50) {
+      if (deltaX > 0) {
+        // Swiped right - go to previous
+        setCarouselIndex((prev) => (prev - 1 + 4) % 4);
+      } else {
+        // Swiped left - go to next
+        setCarouselIndex((prev) => (prev + 1) % 4);
+      }
+    }
+  };
+
+  const handleIndicatorClick = (index) => {
+    setCarouselIndex(index);
+  };
+
   return (
     <div className="expertise-page">
       <div className="cube-container">
@@ -119,8 +160,8 @@ export default function Expertise() {
           <div className="cube-face front">
             <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
-              <svg className="face-frame" viewBox="0 0 600 360">
-                <rect x="0" y="0" width="600" height="360" fill="white" />
+              <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <rect x="0" y="0" width="600" height="360" fill="red" />
                 <rect x="0" y="0" width="600" height="360" fill="none" stroke="black" strokeWidth="3" />
                 <rect x="40" y="30" width="270" height="190" fill="none" stroke="black" strokeWidth="3" />
               </svg>
@@ -139,8 +180,8 @@ export default function Expertise() {
           <div className="cube-face right">
             <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
-              <svg className="face-frame" viewBox="0 0 600 360">
-                <rect x="0" y="0" width="600" height="360" fill="white" />
+              <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <rect x="0" y="0" width="600" height="360" fill="red" />
                 <rect x="0" y="0" width="600" height="360" fill="none" stroke="black" strokeWidth="3" />
                 <rect x="40" y="30" width="270" height="190" fill="none" stroke="black" strokeWidth="3" />
               </svg>
@@ -159,8 +200,8 @@ export default function Expertise() {
           <div className="cube-face back">
             <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
-              <svg className="face-frame" viewBox="0 0 600 360">
-                <rect x="0" y="0" width="600" height="360" fill="white" />
+              <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <rect x="0" y="0" width="600" height="360" fill="red" />
                 <rect x="0" y="0" width="600" height="360" fill="none" stroke="black" strokeWidth="3" />
                 <rect x="40" y="30" width="270" height="190" fill="none" stroke="black" strokeWidth="3" />
               </svg>
@@ -179,8 +220,8 @@ export default function Expertise() {
           <div className="cube-face left">
             <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
-              <svg className="face-frame" viewBox="0 0 600 360">
-                <rect x="0" y="0" width="600" height="360" fill="white" />
+              <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <rect x="0" y="0" width="600" height="360" fill="red" />
                 <rect x="0" y="0" width="600" height="360" fill="none" stroke="black" strokeWidth="3" />
                 <rect x="40" y="30" width="270" height="190" fill="none" stroke="black" strokeWidth="3" />
               </svg>
@@ -194,6 +235,48 @@ export default function Expertise() {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Mobile Carousel */}
+      <div 
+        className="carousel-container"
+        onTouchStart={handleCarouselTouchStart}
+        onTouchMove={handleCarouselTouchMove}
+        onTouchEnd={handleCarouselTouchEnd}
+      >
+        <div className="carousel-wrapper">
+          {EXPERTISE_DATA.map((item, index) => (
+            <div
+              key={index}
+              className="carousel-slide"
+              style={{
+                transform: `translateX(calc((${index} - ${carouselIndex}) * 100%))`,
+              }}
+            >
+              <img src="/images/home/expert-2.png" alt={item.title} className="carousel-image" />
+              <div className="carousel-content">
+                <h2 className="carousel-title">{item.title}</h2>
+                <ul className="carousel-list">
+                  {item.items.map((listItem, listIndex) => (
+                    <li key={listIndex} className="carousel-list-item">{listItem}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Carousel Indicators */}
+        <div className="carousel-indicators">
+          {EXPERTISE_DATA.map((_, index) => (
+            <button
+              key={index}
+              className={`carousel-dot ${index === carouselIndex ? 'active' : ''}`}
+              onClick={() => handleIndicatorClick(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </div>
