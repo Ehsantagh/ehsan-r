@@ -101,11 +101,11 @@ export default function Expertise() {
     return () => clearInterval(interval);
   }, []);
 
-  // Carousel auto-rotation every 12 seconds
+  // Carousel auto-rotation every 8 seconds
   useEffect(() => {
     const carouselInterval = setInterval(() => {
       setCarouselIndex((prev) => prev + 1);
-    }, 12000);
+    }, 8000);
 
     return () => clearInterval(carouselInterval);
   }, []);
