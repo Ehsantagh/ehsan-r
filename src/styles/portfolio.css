@@ -98,6 +98,14 @@
   .work-meta p {
     font-size: 0.84rem !important;
   }
+
+  .text-module h2 {
+    font-size: 1.rem !important;
+    line-height: 2rem !important;
+    margin-bottom: -1rem !important;
+  }
+
+
 }
 
 /* Work Card */
