@@ -67,6 +67,22 @@
   color: #ffffff;
 }
 
+/* Back Button - Mobile Work Template Pages */
+.back-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 2.16rem;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 99;
+  pointer-events: auto;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -232,5 +248,9 @@
   .menu-items button {
     font-size: 1.1583rem;
     padding: 0.3861rem 0.7722rem;
+  }
+
+  .back-button {
+    display: block;
   }
 }

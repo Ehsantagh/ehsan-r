@@ -69,6 +69,13 @@ export default function Menu() {
           ))}
         </ul>
       </nav>
+
+      {/* Back Button - Only on mobile work-template pages */}
+      {location.pathname.startsWith('/work/') && (
+        <button className="back-button" onClick={() => navigate('/worklist')} aria-label="back">
+          ←
+        </button>
+      )}
     </div>
   );
 }
