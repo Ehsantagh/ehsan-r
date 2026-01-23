@@ -94,6 +94,10 @@
   .work-list-grid {
     grid-template-columns: 1fr;
   }
+
+  .work-meta p {
+    font-size: 0.84rem !important;
+  }
 }
 
 /* Work Card */
