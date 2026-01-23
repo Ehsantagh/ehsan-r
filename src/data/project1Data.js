@@ -12,7 +12,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-1">
-          <img src="/images/project-1/1-1.webp" alt="section-1" class="section-1-image" style="width: 70%; padding: 1.5rem; display: block; margin: 150px auto 20px;">
+          <img src="/images/project-1/1-1.webp" alt="section-1" class="section-1-image">
           <p class="section-1-text"></p>
         </div>
       `
@@ -22,7 +22,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-2">
-          <img src="/images/project-1/1-2.webp" alt="section-2" class="section-2-image" style="width: 70%; display: block; margin: 0 auto;">
+          <img src="/images/project-1/1-2.webp" alt="section-2" class="section-2-image">
           <p class="section-2-text"></p>
         </div>
       `
@@ -32,7 +32,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-3">
-          <img src="/images/project-1/1-3.webp" alt="section-3" class="section-3-image" style=" width: 70%; display: block; margin: 0 auto;">
+          <img src="/images/project-1/1-3.webp" alt="section-3" class="section-3-image">
           <p class="section-3-text"></p>
         </div>
       `
@@ -42,7 +42,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-4">
-          <img src="/images/project-1/1-4.webp" alt="section-4" class="section-4-image" style=" width: 70%; display: block; margin: 0 auto;">
+          <img src="/images/project-1/1-4.webp" alt="section-4" class="section-4-image">
           <p class="section-4-text"></p>
         </div>
       `
@@ -52,7 +52,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-5">
-          <img src="/images/project-1/1-5.webp" alt="section-5" class="section-5-image" style="width: 70%; display: block; margin: 200px auto 100px;">
+          <img src="/images/project-1/1-5.webp" alt="section-5" class="section-5-image">
           <p class="section-5-text"></p>
         </div>
       `
@@ -62,7 +62,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-6">
-          <img src="/images/project-1/1-6.webp" alt="section-6" class="section-6-image" style="width: 60%; display: block; margin: 200px auto 200px;">
+          <img src="/images/project-1/1-6.webp" alt="section-6" class="section-6-image">
           <p class="section-6-text"></p>
         </div>
       `
@@ -73,8 +73,7 @@ export const project1Data = {
       subtitle: 'User Data Sources & Methodology',
       body: '',
       image: '/images/project-1/1-8.webp',
-      caption: '',
-      style: { width: '100%', padding: '0', margin: '0' }
+      caption: ''
     },
       {
       id: 8,
@@ -129,7 +128,7 @@ export const project1Data = {
      type: 'html',
      html: `
        <div class="section-6">
-         <img src="/images/project-1/1-7.webp" alt="section-6" class="section-6-image" style="width: 60%; display: block; margin: 300px auto 150px;">
+         <img src="/images/project-1/1-7.webp" alt="section-6" class="section-7-image">
          <p class="section-6-text"></p>
        </div>
      `
@@ -429,7 +428,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-15">
-          <img src="/images/project-1/1-15.webp" alt="section-15" class="section-15-image" style="width: 70%; display: block; margin: 200px auto 100px;">
+          <img src="/images/project-1/1-15.webp" alt="section-15" class="section-15-image">
           <p class="section-15-text"></p>
         </div>
       `
@@ -471,7 +470,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-16">
-          <img src="/images/project-1/1-16.webp" alt="section-16" class="section-16-image" style="width: 70%; display: block; margin: 400px auto 150px;">
+          <img src="/images/project-1/1-16.webp" alt="section-16" class="section-16-image">
           <p class="section-16-text"></p>
         </div>
       `
@@ -521,7 +520,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-17">
-          <img src="/images/project-1/1-17.webp" alt="section-17" class="section-17-image" style="width: 70%; display: block; margin: 400px auto 150px;">
+          <img src="/images/project-1/1-17.webp" alt="section-17" class="section-17-image">
           <p class="section-17-text"></p>
         </div>
       `
@@ -531,7 +530,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-27">
-          <img src="/images/project-1/1-27.webp" alt="section-27" class="section-27-image" style="width: 70%; display: block; margin: 200px auto 100px;">
+          <img src="/images/project-1/1-27.webp" alt="section-27" class="section-27-image">
           <p class="section-27-text"></p>
         </div>
       `
@@ -581,7 +580,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-33">
-          <img src="/images/project-1/1-44.webp" alt="section-33" class="section-33-image" style="width: 80%; display: block; margin: 300px auto 150px;">
+          <img src="/images/project-1/1-44.webp" alt="section-33" class="section-33-image">
           <p class="section-33-text"></p>
         </div>
       `
@@ -647,7 +646,7 @@ export const project1Data = {
       type: 'html',
       html: `
         <div class="section-41">
-          <img src="/images/project-1/1-17.webp" alt="section-41" class="section-41-image" style="width: 70%; display: block; margin: 300px auto 200px;">
+          <img src="/images/project-1/1-17.webp" alt="section-41" class="section-41-image">
           <p class="section-41-text"></p>
         </div>
       `

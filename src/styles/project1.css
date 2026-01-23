@@ -1,0 +1,161 @@
+/* Project 1 Section 1 */
+.section-1-image {
+  width: 70%;
+  padding: 1.5rem;
+  display: block;
+  margin: 150px auto 20px;
+}
+
+/* Project 1 Section 2 */
+.section-2-image {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Project 1 Section 3 */
+.section-3-image {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Project 1 Section 4 */
+.section-4-image {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Project 1 Section 5 */
+.section-5-image {
+  width: 70%;
+  display: block;
+  margin: 200px auto 100px;
+}
+
+/* Project 1 Section 6 */
+.section-6-image {
+  width: 60%;
+  display: block;
+  margin: 100px auto 80px;
+}
+
+/* Project 1 Section 7 */
+.section-7-image {
+  width: 60%;
+  display: block;
+  margin: 300px auto 150px;
+}
+
+
+
+/* Project 1 Section 15 */
+.section-15-image {
+  width: 70%;
+  display: block;
+  margin: 200px auto 100px;
+}
+
+/* Project 1 Section 16 */
+.section-16-image {
+  width: 70%;
+  display: block;
+  margin: 400px auto 150px;
+}
+
+/* Project 1 Section 17 */
+.section-17-image {
+  width: 70%;
+  display: block;
+  margin: 400px auto 150px;
+}
+
+/* Project 1 Section 27 */
+.section-27-image {
+  width: 70%;
+  display: block;
+  margin: 200px auto 100px;
+}
+
+/* Project 1 Section 33 */
+.section-33-image {
+  width: 80%;
+  display: block;
+  margin: 300px auto 150px;
+}
+
+/* Project 1 Section 41 */
+.section-41-image {
+  width: 70%;
+  display: block;
+  margin: 300px auto 200px;
+}
+
+@media (max-width: 768px) {
+  .section-1-image {
+    margin: 50px auto 20px;
+  }
+
+  .section-2-image {
+    margin: 0 auto;
+  }
+
+  .section-3-image {
+    margin: 0 auto;
+  }
+
+  .section-4-image {
+    margin: 0 auto;
+  }
+
+  .section-5-image {
+    margin: 100px auto 100px;
+  }
+
+  .section-6-image {
+    margin: 100px auto 100px;
+  }
+
+  .section-7-image {
+    margin: 150px auto 75px;
+  }
+
+  .section-15-image {
+    margin: 100px auto 50px;
+  }
+
+  .section-16-image {
+    margin: 200px auto 75px;
+  }
+
+  .section-17-image {
+    margin: 200px auto 75px;
+  }
+
+  .section-27-image {
+    margin: 100px auto 50px;
+  }
+
+  .section-33-image {
+    margin: 150px auto 75px;
+  }
+
+  .section-41-image {
+    margin: 150px auto 100px;
+  }
+}
+
+/* Project 1 TextModule Images */
+.text-module-image img {
+  width: 80%;
+  margin: 0 0 1.5rem 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .text-module-image img {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+}

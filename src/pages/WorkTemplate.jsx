@@ -9,6 +9,7 @@ import { worksData } from '../data/worksData';
 import { project1Data } from '../data/project1Data';
 import { BackgroundContext } from '../App';
 import '../styles/portfolio.css';
+import '../styles/project1.css';
 
 export default function WorkTemplate() {
   const { id } = useParams();
