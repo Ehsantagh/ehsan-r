@@ -158,7 +158,7 @@ export default function Expertise() {
         >
           {/* Front Face */}
           <div className="cube-face front">
-            <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
+            <img src="/images/home/Strategy-1.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
               <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
                 <rect x="0" y="0" width="600" height="360" fill="white" />
@@ -178,7 +178,7 @@ export default function Expertise() {
 
           {/* Right Face */}
           <div className="cube-face right">
-            <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
+            <img src="/images/home/design-1.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
               <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
                 <rect x="0" y="0" width="600" height="360" fill="white" />
@@ -198,7 +198,7 @@ export default function Expertise() {
 
           {/* Back Face */}
           <div className="cube-face back">
-            <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
+            <img src="/images/home/leadership-1.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
               <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
                 <rect x="0" y="0" width="600" height="360" fill="white" />
@@ -218,7 +218,7 @@ export default function Expertise() {
 
           {/* Left Face */}
           <div className="cube-face left">
-            <img src="/images/home/expert-2.png" alt="expertise-bg" className="cube-bg-image" />
+            <img src="/images/home/technical-1.png" alt="expertise-bg" className="cube-bg-image" />
             <div className="svg-wrapper">
               <svg className="face-frame" viewBox="0 0 600 360" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
                 <rect x="0" y="0" width="600" height="360" fill="white" />
