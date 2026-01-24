@@ -183,6 +183,13 @@
   transform: rotateY(-90deg) translateZ(300px);
 }
 
+/* Larger image for back face */
+.cube-face.back .cube-bg-image {
+  width: 70%;
+  height: 70%;
+  transform: translateX(-40px) translateY(-65px); 
+}
+
 /* Responsive Design */
 @media (max-width: 800px) {
   .expertise-page {
