@@ -10,6 +10,7 @@ const EXPERTISE_DATA = [
       'Journey mapping & systems thinking',
       'Metrics-aware decision-making',
     ],
+    carouselImage: '/images/home/Strategy-1.png',
   },
   {
     title: 'Experience & Systems Design',
@@ -20,6 +21,7 @@ const EXPERTISE_DATA = [
       'Design systems & component libraries',
       'Motion & micro-interactions',
     ],
+    carouselImage: '/images/home/design-1.png',
   },
   {
     title: 'Leadership & Collaboration',
@@ -29,6 +31,7 @@ const EXPERTISE_DATA = [
       'Mentoring & critique',
       'Design process definition',
     ],
+    carouselImage: '/images/home/leadership-1.png',
   },
   {
     title: 'Technical & Production Fluency',
@@ -38,6 +41,7 @@ const EXPERTISE_DATA = [
       'Feasibility & implementation trade-offs',
       'Industrial design & manufacturing awareness',
     ],
+    carouselImage: '/images/home/technical-1.png',
   },
 ];
 
@@ -254,7 +258,7 @@ export default function Expertise() {
                 transform: `translateX(calc((${index} - ${carouselIndex % 4}) * 100%))`,
               }}
             >
-              <img src="/images/home/expert-2.png" alt={item.title} className="carousel-image" />
+              <img src={item.carouselImage} alt={item.title} className="carousel-image" />
               <div className="carousel-content">
                 <h2 className="carousel-title">{item.title}</h2>
                 <ul className="carousel-list">
