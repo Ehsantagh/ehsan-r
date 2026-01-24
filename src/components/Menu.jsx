@@ -43,7 +43,7 @@ export default function Menu() {
   };
 
   return (
-    <div className={`menu-container ${isOpen ? 'open' : 'closed'} ${isContactPage || isTorchPage ? 'contact-mode' : ''}`} ref={menuRef}>
+    <div className={`menu-container ${isOpen ? 'open' : 'closed'} ${isContactPage || isTorchPage ? 'contact-mode' : ''} ${isTorchPage ? 'torch-mode' : ''}`} ref={menuRef}>
       {/* Ladder Image - Clickable */}
       <div className="menu-ladder" onClick={handleLadderClick}>
         <img src={isContactPage || isTorchPage ? '/images/home/menu-ladder-white.png' : '/images/home/menu-ladder.png'} alt="menu ladder" />

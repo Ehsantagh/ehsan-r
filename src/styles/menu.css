@@ -254,3 +254,28 @@
     display: block;
   }
 }
+
+/* Torch Page - Shadow Styles */
+/* .menu-container.torch-mode .menu-ladder {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+} */
+
+.menu-container.torch-mode .menu-ladder img {
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+}
+
+/* .menu-container.torch-mode .menu-text {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+} */
+
+.menu-container.torch-mode .menu-text {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+}
+
+/* .menu-container.torch-mode .menu-items {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+} */
+
+.menu-container.torch-mode .menu-items button {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+}
