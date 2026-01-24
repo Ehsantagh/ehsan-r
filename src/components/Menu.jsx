@@ -51,7 +51,7 @@ export default function Menu() {
 
       {/* Menu Text - Always visible */}
       {!isOpen && (
-        <span className="menu-text" onClick={handleLadderClick}>Ladder</span>
+        <span className="menu-text" onClick={handleLadderClick}>Explore</span>
       )}
 
       {/* Menu Items */}
