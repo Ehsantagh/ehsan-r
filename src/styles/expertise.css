@@ -213,15 +213,25 @@
     flex-direction: column;
     overflow: visible;
     background: white;
+    /* background-color: yellow; */
+
   }
 
   .carousel-wrapper {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: auto;
+    /* height: auto; */
+  }
+
+  .carousel-slides-container {
+    position: relative;
     overflow: hidden;
     width: 100%;
     height: auto;
-    /* background-color: yellow; */
-    min-height: 500px;
+    min-height: 300px;
   }
 
   .carousel-slide {
@@ -243,7 +253,7 @@
   }
 
   .carousel-content {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 0 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -294,6 +304,9 @@
     padding: 1rem 0;
     background: white;
     width: 100%;
+    z-index: 10;
+    margin-top: -6.5rem;
+    /* background-color: violet; */
   }
 
   .carousel-dot {

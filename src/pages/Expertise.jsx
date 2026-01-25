@@ -250,37 +250,42 @@ export default function Expertise() {
         onTouchEnd={handleCarouselTouchEnd}
       >
         <div className="carousel-wrapper">
-          {EXPERTISE_DATA.map((item, index) => (
-            <div
-              key={index}
-              className="carousel-slide"
-              style={{
-                transform: `translateX(calc((${index} - ${carouselIndex % 4}) * 100%))`,
-              }}
-            >
-              <img src={item.carouselImage} alt={item.title} className="carousel-image" />
-              <div className="carousel-content">
-                <h2 className="carousel-title">{item.title}</h2>
-                <ul className="carousel-list">
-                  {item.items.map((listItem, listIndex) => (
-                    <li key={listIndex} className="carousel-list-item">{listItem}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
+          {/* Image - Top */}
+          <img src={EXPERTISE_DATA[carouselIndex % 4].carouselImage} alt="Carousel" className="carousel-image" />
 
-        {/* Carousel Indicators */}
-        <div className="carousel-indicators">
-          {EXPERTISE_DATA.map((_, index) => (
-            <button
-              key={index}
-              className={`carousel-dot ${index === carouselIndex % 4 ? 'active' : ''}`}
-              onClick={() => handleIndicatorClick(index)}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
+          {/* Content - Middle */}
+          <div className="carousel-slides-container">
+            {EXPERTISE_DATA.map((item, index) => (
+              <div
+                key={index}
+                className="carousel-slide"
+                style={{
+                  transform: `translateX(calc((${index} - ${carouselIndex % 4}) * 100%))`,
+                }}
+              >
+                <div className="carousel-content">
+                  <h2 className="carousel-title">{item.title}</h2>
+                  <ul className="carousel-list">
+                    {item.items.map((listItem, listIndex) => (
+                      <li key={listIndex} className="carousel-list-item">{listItem}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Indicators - Bottom */}
+          <div className="carousel-indicators">
+            {EXPERTISE_DATA.map((_, index) => (
+              <button
+                key={index}
+                className={`carousel-dot ${index === carouselIndex % 4 ? 'active' : ''}`}
+                onClick={() => handleIndicatorClick(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
