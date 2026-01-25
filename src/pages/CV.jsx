@@ -74,7 +74,7 @@ export default function CV() {
             <div className="achievement">
               <h3>Niku Self-Service Ecosystem — Co-Founder & Design Director</h3>
               <ul>
-                <li>Pioneered the self-service industry in Iran by designing an integrated ecosystem of hardware and a set of kiosk interfaces, resulting in the deployment of 10,000+ kiosks across 35 cities and securing 92% market share in medical, 45% in hospitality, and 30% in ordering sector by 2025.</li>
+                <li>Pioneered a category-defining self-service ecosystem in Iran by designing an integrated ecosystem of hardware and a set of kiosk interfaces, resulting in the deployment of 10,000+ kiosks across 35 cities and securing 72% market share in medical, 35% in hospitality, and 20% in ordering sectors (as of 2026).</li>
                 <li>Drove product vision, UX, UI, and industrial design, establishing Niku as the category-defining leader in simple, reliable self-service technology.</li>
               </ul>
             </div>
@@ -195,7 +195,7 @@ export default function CV() {
           </section>
 
           <footer className="cv-footer">
-            <p>Last update: Dec 2025</p>
+            <p>Last update: Jan 2026</p>
           </footer>
         </div>
       </div>
