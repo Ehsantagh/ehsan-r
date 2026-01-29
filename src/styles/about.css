@@ -149,6 +149,10 @@
 .pair h3 { margin: 0 0 0.5rem 0; font-weight: 600; font-size: 2.1rem; color: black;}
 .pair p { margin: 0 0 1rem 0; font-size: 1.55rem; font-weight: 200; color: #000000; line-height: 1.5; }
 .pair ul { margin-left: 1.2rem; font-size: 1.75rem; font-weight: 200; color: #000000; line-height: 1.45; margin: 0; padding-left: 1.6rem;}
+.pair a { display: inline-block; padding-top: 1.25rem; padding-bottom: 1rem; font-size: 1.3rem; font-weight: 600; color: black; line-height: .5;}
+.pair a::after { content: " ↗"; font-size: 1rem; }
+.pair a:hover {  font-size: 1.3rem; font-weight: 700; color: #008743; line-height: .5;}
+
 @media (max-width: 700px) {
   /* .about-page { --deco-width: calc(100% - 2rem); } */
   .about-box { padding: 1.25rem; grid-template-columns: 1fr; width: var(--deco-width); }

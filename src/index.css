@@ -39,11 +39,11 @@ body {
 
 a {
   font-weight: 500;
-  color: #521500;
+  color: black;
   text-decoration: inherit;
 }
 a:hover {
-  color: #3d0f00;
+  color: black;
 }
 
 h1 {

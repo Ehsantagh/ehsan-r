@@ -28,7 +28,9 @@ export default function About() {
           <div className="pair">
             <h3>What shaped my approach</h3>
             <p>Before focusing fully on digital product design, I co-founded and led two design-driven companies.</p>
+            <a href="https://niku.co" target="_blank" rel="noopener noreferrer">Niku Kiosk</a> 
             <p>One grew into a category-defining self-service platform, combining hardware, software, and service design, and scaling to over 10,000 deployed kiosks across multiple industries. I led everything from product vision and UX to industrial design systems and team growth.</p>
+            <a href="https://ekasdesign.com/en" target="_blank" rel="noopener noreferrer">Ekas studio</a> 
             <p>Earlier, I co-founded an industrial design studio, working with over 40 companies across medical, consumer, and technology sectors — learning how to move from concept to production efficiently and responsibly.</p>
             <p>These experiences taught me how products succeed (and fail) beyond the design file.</p>
             <p><br/></p> 
