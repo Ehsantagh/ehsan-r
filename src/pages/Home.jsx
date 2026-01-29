@@ -35,7 +35,7 @@ export default function Home() {
       >
         {/* Image */}
         <div className="intro-image">
-          <img src="/images/home/char-1.svg" alt="profile" />
+          <img src="/images/home/Char-1.gif" alt="profile" />
         </div>
 
         {/* Title */}
