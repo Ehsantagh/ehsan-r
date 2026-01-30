@@ -331,6 +331,14 @@ export const project1Data = {
       ]
     },
     {
+      id: 14,
+      title: 'We conducted an online survey',
+      subtitle: 'To statistically validate and prioritise the findings across larger user base',
+      body: '',
+      image: '',
+      caption: '',
+    },
+    {
       id: 'tabs-2',
       type: 'tabs',
       tabs: [
