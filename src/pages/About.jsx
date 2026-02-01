@@ -37,7 +37,7 @@ export default function About() {
           </div>
           <div className="pair">
             <h3>How I work today</h3>
-            <p>As a Senior Product Designer, I bring that founder mindset into digital work:<br/><br/></p>
+            <p>As a Senior Product Designer, I bring that founder mindset into digital work:<br/></p>
             <ul>
                 <li>I think in systems and end-to-end journeys</li>
                 <li>I care deeply about clarity, usability, and performance</li>
