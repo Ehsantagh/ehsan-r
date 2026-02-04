@@ -30,6 +30,18 @@ function AppContent() {
     };
   }, [backgroundColor]);
 
+  // Track SPA route changes in Google Analytics
+  useEffect(() => {
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      const pagePath = `${location.pathname}${location.search}${location.hash}`;
+      window.gtag('event', 'page_view', {
+        page_path: pagePath,
+        page_location: window.location.href,
+        page_title: document.title,
+      });
+    }
+  }, [location]);
+
   return (
     <BackgroundContext.Provider value={{ backgroundColor, setBackgroundColor }}>
       <>
