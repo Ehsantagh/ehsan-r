@@ -3,46 +3,45 @@ import '../styles/expertise.css';
 
 const EXPERTISE_DATA = [
   {
-    title: 'Product Strategy & Discovery',
-    items: [
-      'Product discovery & opportunity framing',
-      'UX strategy aligned to business goals',
-      'Journey mapping & systems thinking',
-      'Metrics-aware decision-making',
-    ],
-    carouselImage: '/images/home/Strategy-1.png',
-  },
-  {
-    title: 'Experience & Systems Design',
-    items: [
-      'End-to-end UX design',
-      'Information architecture & user flows',
-      'Interaction & visual design',
-      'Design systems & component libraries',
-      'Motion & micro-interactions',
-    ],
-    carouselImage: '/images/home/design-1.png',
-  },
-  {
-    title: 'Leadership & Collaboration',
-    items: [
-      'Stakeholder alignment',
-      'Cross-functional facilitation',
-      'Mentoring & critique',
-      'Design process definition',
-    ],
-    carouselImage: '/images/home/leadership-1.png',
-  },
-  {
-    title: 'Technical & Production Fluency',
-    items: [
-      'Design–engineering collaboration',
-      'HTML, CSS, JavaScript, React fluency',
-      'Feasibility & implementation trade-offs',
-      'Industrial design & manufacturing awareness',
-    ],
-    carouselImage: '/images/home/technical-1.png',
-  },
+  title: 'Product Direction',
+  items: [
+    'Identifying real user and business problems',
+    'Turning ambiguity into clear product direction',
+    'Opportunity framing and prioritisation',
+    'Connecting user insight to measurable outcomes',
+  ],
+  carouselImage: '/images/home/Strategy-1.png',
+},
+{
+  title: 'Systems Design',
+  items: [
+    'Designing complete user journeys, not screens',
+    'Information architecture and complex flows',
+    'Interaction, visual design, and motion',
+    'Design systems that scale across teams and products',
+  ],
+  carouselImage: '/images/home/design-1.png',
+},
+{
+  title: 'Product Leadership',
+  items: [
+    'Working closely with product and engineering',
+    'Aligning stakeholders around clear decisions',
+    'Facilitating collaboration and design critique',
+    'Raising design quality through shared standards',
+  ],
+  carouselImage: '/images/home/leadership-1.png',
+},
+{
+  title: 'Technical Execution',
+  items: [
+    'Strong design–development collaboration',
+    'Comfortable working with HTML, CSS, JavaScript, React',
+    'Designing with implementation and trade-offs in mind',
+    'Bridging digital products with physical systems',
+  ],
+  carouselImage: '/images/home/technical-1.png',
+},
 ];
 
 export default function Expertise() {

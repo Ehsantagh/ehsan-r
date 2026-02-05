@@ -19,190 +19,184 @@ export default function CV() {
   }
 
   return (
-    <div className="cv-page">
-      <button className="download-button" onClick={handleDownload}>
-        Download CV ↓
-      </button>
-      <div className="cv-container">
-        <div className="cv-content">
-          <header className="cv-header">
-            <h1>Ehsan Taghaddosi</h1>
-            <p className="title">Senior Product Designer with Hybrid Digital, Industrial & Business Background</p>
-            <p className="intro">
-              Senior Product Designer with a multidisciplinary background spanning UX, digital product, industrial design, and product innovation. I lead cross-functional teams to deliver intuitive, high-performance products that balance user needs with business goals. Experienced in taking products from concept to market, building design systems, and mentoring teams to elevate design quality and outcomes. Skilled at bridging digital and physical experiences to create cohesive, end-to-end product ecosystems.
-            </p>
-          </header>
+  <div className="cv-page">
+    <button className="download-button" onClick={handleDownload}>
+      Download CV ↓
+    </button>
 
-          <section className="cv-section">
-            <h2>Core Skills & Design Proficiencies</h2>
-            <div className="skills-grid">
-              <div className="skill-item">
-                <h3>Leadership</h3>
-                <p>Product strategy & delivery, stakeholder alignment, mentoring, cross-functional collaboration</p>
-              </div>
-              <div className="skill-item">
-                <h3>User Experience</h3>
-                <p>Research, journey mapping, IA, prototyping, usability testing, UX strategy</p>
-              </div>
-              <div className="skill-item">
-                <h3>Interface Design</h3>
-                <p>Visual design, design systems, interaction design, UI prototyping, 3D/2D animation</p>
-              </div>
-              <div className="skill-item">
-                <h3>Development</h3>
-                <p>HTML, CSS, JavaScript, React, design–dev collaboration</p>
-              </div>
-              <div className="skill-item">
-                <h3>Industrial Design</h3>
-                <p>SolidWorks, Blender, rapid prototyping, DFM, materials & processes, 3D visualisation</p>
-              </div>
+    <div className="cv-container">
+      <div className="cv-content">
+        <header className="cv-header">
+          <h1>Ehsan Taghaddosi</h1>
+          <p className="title">Senior Product Designer (UX / Product)</p>
+          <p className="intro">
+            Senior Product Designer with 10+ years of experience designing and scaling complex digital products, including e-commerce platforms and high-traffic transactional systems. Strong background in UX strategy, interaction design, and design systems, with hands-on delivery across discovery, prototyping, testing, and implementation. Experienced working closely with product, engineering, and marketing teams to deliver measurable business and customer outcomes. Skilled at bridging digital and physical product experiences and leading cross-functional teams.
+          </p>
+          
+        </header>
+
+        <section className="cv-section">
+          <h2>Core Skills</h2>
+          <div className="skills-grid">
+            <div className="skill-item">
+              <h3>Product & UX</h3>
+              <p>
+                UX strategy, discovery & research, journey mapping, information architecture,
+                usability testing, service blueprints
+              </p>
             </div>
-          </section>
-
-          <section className="cv-section">
-            <h2>Key Achievements</h2>
-            
-            <div className="achievement">
-              <h3>Linco Care — Multi-Platform E-Commerce Redesign</h3>
-              <ul>
-                <li>Led multi-platform e-commerce redesign across five websites, improving conversion through PDP/PLP optimisation and increasing average order value with bundle-focused flows.</li>
-                <li>Strengthened brand trust with science-aligned digital storytelling and high-impact visual narratives, significantly increasing customer engagement and unifying cross-platform consistency.</li>
-                <li>Elevated customer experience by improving NPS, sustainability messaging, and skin-type guidance; boosted engagement with educational tools (UV index, SPF quiz, application guides), increasing content-to-commerce conversion.</li>
-              </ul>
+            <div className="skill-item">
+              <h3>UI & Interaction</h3>
+              <p>
+                Interaction design, responsive UI, design systems, accessibility,
+                prototyping (Figma)
+              </p>
             </div>
-
-            <div className="achievement">
-              <h3>Niku Self-Service Ecosystem — Co-Founder & Design Director</h3>
-              <ul>
-                <li>Pioneered a category-defining self-service ecosystem in Iran by designing an integrated ecosystem of hardware and a set of kiosk interfaces, resulting in the deployment of 10,000+ kiosks across 35 cities and securing 72% market share in medical, 35% in hospitality, and 20% in ordering sectors (as of 2026).</li>
-                <li>Drove product vision, UX, UI, and industrial design, establishing Niku as the category-defining leader in simple, reliable self-service technology.</li>
-              </ul>
+            <div className="skill-item">
+              <h3>Delivery</h3>
+              <p>
+                End-to-end product design, experimentation, metrics-driven optimisation,
+                design–engineering collaboration
+              </p>
             </div>
-
-            <div className="achievement">
-              <h3>Ekas Design Studio — Co-Founder & Senior Designer</h3>
-              <ul>
-                <li>Co-founded and grew one of Iran's leading industrial design studios, collaborating with more than 40 companies across medical technology, consumer electronics, and packaging.</li>
-                <li>Directed end-to-end product design from research to production, contributing to multiple award-winning products in international competitions and helping clients reduce manufacturing complexity, differentiate their offerings, and accelerate time-to-market.</li>
-              </ul>
+            <div className="skill-item">
+              <h3>Technical Literacy</h3>
+              <p>
+                HTML, CSS, JavaScript, React (working knowledge)
+              </p>
             </div>
-          </section>
-
-          <section className="cv-section">
-            <h2>Work Experience</h2>
-
-            <div className="job">
-              <div className="job-header">
-                <h3>Head of Design & Digital Experience</h3>
-                <p className="company">Linco Care, Manchester | 2022 – present</p>
-              </div>
-              <ul>
-                <li>Led the transition of a traditional skincare brand into one with a strong digital presence. Managed UX/UI across multiple websites and e-commerce platforms, while also leading packaging design and visual communications.</li>
-                <li>Introduced structured design workflows and digital guidelines.</li>
-                <li>Used product thinking and iterative testing to improve conversion and engagement.</li>
-                <li>Worked closely with marketing and engineering to align brand, business, and user needs.</li>
-              </ul>
+            <div className="skill-item">
+              <h3>Collaboration</h3>
+              <p>
+                Stakeholder alignment, cross-functional workshops, mentoring designers
+              </p>
             </div>
+          </div>
+        </section>
 
-            <div className="job">
-              <div className="job-header">
-                <h3>Director / Product Expansion & Experience Strategy</h3>
-                <p className="company">Moonshire, London | 2020 – 2022</p>
-              </div>
-              <ul>
-                <li>Led the UK expansion of Niku, a self-service technology company, blending business development with product and experience strategy.</li>
-                <li>Applied product design insights to position kiosk solutions for a new market.</li>
-                <li>Conducted opportunity mapping, competitive analysis, and experience localisation.</li>
-                <li>Strengthened product narratives, value propositions, and user experience expectations.</li>
-                <li>Acted as the bridge between design, technology, and commercial strategy.</li>
-              </ul>
-            </div>
+        <section className="cv-section">
+          <h2>Professional Experience</h2>
 
-            <div className="job">
-              <div className="job-header">
-                <h3>Co-founder & Design Director</h3>
-                <p className="company">Niku, Iran | 2013 – 2021</p>
-              </div>
-              <ul>
-                <li>Founded and scaled Iran's leading self-service technology company, delivering an integrated ecosystem of hardware and software products. Led product strategy based on clear market opportunities, resulting in category-defining kiosk designs that transformed the industry landscape.</li>
-                <li>Defined product strategy from market gaps, leading to iconic kiosk designs that reshaped the industry.</li>
-                <li>Built and directed industrial design, UX/UI, and research teams.</li>
-                <li>Set experience standards for kiosk interfaces used by thousands of end users.</li>
-                <li>Oversaw design system creation, prototype development, and user testing.</li>
-              </ul>
+          <div className="job">
+            <div className="job-header">
+              <h3>Head of Design & Digital Experience</h3>
+              <p className="company">Linco Care – Manchester, UK | 2022 – Present</p>
             </div>
-
-            <div className="job">
-              <div className="job-header">
-                <h3>Co-founder & Senior Designer</h3>
-                <p className="company">Ekas Design Studio, Iran | 2008 – 2019</p>
-              </div>
-              <ul>
-                <li>Worked across concept development, prototyping, UX research, and design-for-manufacturing.</li>
-                <li>Led early-stage concept development for dozens of products.</li>
-                <li>Built prototypes and conducted user testing sessions.</li>
-                <li>Collaborated closely with engineering teams on DFM and technical refinement.</li>
-              </ul>
-            </div>
-
-            <div className="job">
-              <div className="job-header">
-                <h3>Consultant & Associate Designer</h3>
-                <p className="company">Tajrobeh Studio, Iran | 2016 – 2020</p>
-              </div>
-              <ul>
-                <li>Supported UX, user research, IA, and visual systems for clients and startups.</li>
-                <li>Conducted usability tests, interviews, and insight synthesis.</li>
-                <li>Designed information architectures and early UX flows.</li>
-                <li>Participated in UI design and systemisation efforts.</li>
-              </ul>
-            </div>
-
-            <div className="job">
-              <div className="job-header">
-                <h3>Design Consultant</h3>
-                <p className="company">Mahestan Resort, Iran | 2015 – 2019</p>
-              </div>
-              <ul>
-                <li>Designed experience, story, and game concepts for a large theme park.</li>
-                <li>Created narrative frameworks based on Persian mythology (Simorgh).</li>
-                <li>Designed interactive games inspired by Iranian folklore.</li>
-              </ul>
-            </div>
-          </section>
-
-          <section className="cv-section">
-            <h2>Education & Certifications</h2>
-            <div className="education">
-              <h3>Tehran Polytechnic University - Iran</h3>
-              <p>MSc Industrial Design 2011</p>
-            </div>
-            <div className="education">
-              <h3>Art University of Tehran - Iran</h3>
-              <p>BA Industrial Design 2009</p>
-            </div>
-          </section>
-
-          <section className="cv-section">
-            <h2>Awards</h2>
-            <ul className="awards-list">
-              <li><strong>LICC Design award - Finalist</strong> | 2022 — Endoscope washing machine design</li>
-              <li><strong>Iran Design Center award - Finalist</strong> | 2022 — Micro-spectrophotometer device design</li>
-              <li><strong>A'Design award - Bronze medal</strong> | 2018 — Delivery box design</li>
-              <li><strong>IDiran design award</strong> | 2017 — Delivery box design, self-service kiosk design</li>
-              <li><strong>National Olympiad - Rank 3rd</strong> | 2009 — Industrial design national students olympiad</li>
+            <ul>
+              <li>Senior IC role leading UX and UI across a multi-brand sun-care e-commerce portfolio.</li>
+              <li>
+                Led end-to-end redesign of five Shopify-based e-commerce websites, covering discovery,
+                UX architecture, UI, and development handover.
+              </li>
+              <li>
+                Improved conversion and AOV through PDP/PLP optimisation, bundle-first purchase flows,
+                and clearer product comparison logic.
+              </li>
+              <li>
+                Designed and iterated educational UX tools including SPF finder, skin-type guidance,
+                and UV index content, increasing content-to-commerce engagement.
+              </li>
+              <li>
+                Built and maintained a cross-brand design system, improving consistency and reducing
+                design and build time across releases.
+              </li>
+              <li>
+                Worked closely with marketing, engineering, and leadership to balance commercial goals,
+                regulatory constraints, and user needs.
+              </li>
             </ul>
-          </section>
+          </div>
 
-          <footer className="cv-footer">
-            <p>Last update: Jan 2026</p>
-          </footer>
-        </div>
+          <div className="job">
+            <div className="job-header">
+              <h3>Senior Product Designer / Design Lead</h3>
+              <p className="company">Niku – International (incl. UK subsidiary Moonshire) | 2013 – 2022</p>
+            </div>
+
+            <ul>
+              <li>
+                Led UX and UI design for a hardware–software self-service platform deployed across
+                10,000+ kiosks in 35+ cities.
+              </li>
+              <li>
+                Designed high-volume transactional flows across healthcare, hospitality, and retail,
+                optimised for speed, accessibility, and error reduction.
+              </li>
+              <li>
+                Defined and evolved touch-first interface standards and design systems for public,
+                high-frequency usage.
+              </li>
+              <li>
+                Worked closely with engineering and operations to ship reliable products under
+                real-world constraints such as hardware limits, connectivity, and regulation.
+              </li>
+              <li>
+                Mentored designers, reviewed work quality, and contributed to hiring and design standards.
+              </li>
+              <li>
+                Led UK market localisation, adapting journeys, content, and compliance for a new market,
+                and supporting go-to-market strategy through experience principles and product narratives.
+              </li>
+            </ul>
+          </div>
+
+          <div className="job">
+            <div className="job-header">
+              <h3>Senior Designer (Product & Industrial Design)</h3>
+              <p className="company">Ekas Design Studio – International | 2008 – 2019</p>
+            </div>
+            <ul>
+              <li>
+                Delivered end-to-end product design for medical devices, consumer electronics,
+                and digital–physical products.
+              </li>
+              <li>
+                Led research, concept development, prototyping, and usability testing in collaboration
+                with engineering teams.
+              </li>
+              <li>
+                Supported clients in reducing manufacturing complexity and accelerating time-to-market.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="cv-section">
+  <h2>Education</h2>
+  <div className="education">
+    <h3>Tehran Polytechnic University – Iran</h3>
+    <p>MSc Industrial Design</p>
+  </div>
+  <div className="education">
+    <h3>Art University of Tehran – Iran</h3>
+    <p>BA Industrial Design</p>
+  </div>
+</section>
+
+<section className="cv-section">
+  <h2>Selected Awards</h2>
+  <ul className="awards-list">
+    <li><strong>A’ Design Award – Bronze</strong> | 2018</li>
+    <li><strong>LICC Design Award – Finalist</strong> | 2022</li>
+    <li><strong>Iran Design Center Award – Finalist</strong> | 2022</li>
+  </ul>
+</section>
+
+<section className="cv-section">
+  <h2>Tools</h2>
+  <p>Figma, Adobe CC, HTML, CSS, JavaScript, React, Vibe coding, SolidWorks, Blender</p>
+</section>
+
+<footer className="cv-footer">
+  <p>Last update: Jan 2026</p>
+</footer>
       </div>
-      <button className="download-button" onClick={handleDownload}>
-        Download CV ↓
-      </button>
-      <p><br/></p>
     </div>
-  )
+
+    <button className="download-button" onClick={handleDownload}>
+      Download CV ↓
+    </button>
+    <p><br /></p>
+  </div>
+)
 }
