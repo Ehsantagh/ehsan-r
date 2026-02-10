@@ -101,8 +101,8 @@ export const project1Data = {
     },
     {
       id: 11,
-      title: 'Meet our three protagonists',
-      subtitle: 'Our estimate based on G4A, reviews and surveys',
+      title: 'Meet our persona',
+      subtitle: '',
       body: '',
       image: '/images/project-1/1-12.webp',
       caption: '',
