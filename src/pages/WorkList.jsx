@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import WorkCard from '../components/WorkCard';
 import Navbar from '../components/Navbar';
@@ -11,7 +11,9 @@ export default function WorkList() {
   const [selectedCategory, setSelectedCategory] = useState(categoryFromUrl || 'All');
   const [isGateOpen, setIsGateOpen] = useState(true);
   const [passwordInput, setPasswordInput] = useState('');
+  const [passwordPlaceholder, setPasswordPlaceholder] = useState('Password');
   const [isShaking, setIsShaking] = useState(false);
+  const placeholderResetTimer = useRef(null);
   const gateStorageKey = 'worklistGateUnlockedAt';
   const gateTtlMs = 60 * 60 * 1000;
 
@@ -35,14 +37,29 @@ export default function WorkList() {
     };
   }, [isGateOpen]);
 
+  useEffect(() => () => {
+    if (placeholderResetTimer.current) {
+      window.clearTimeout(placeholderResetTimer.current);
+    }
+  }, []);
+
   const handleUnlock = (event) => {
     event.preventDefault();
     if (passwordInput.trim().toLowerCase() === 'afteryou') {
       window.localStorage.setItem(gateStorageKey, String(Date.now()));
       setIsGateOpen(false);
       setIsShaking(false);
+      setPasswordPlaceholder('Password');
       return;
     }
+    setPasswordInput('');
+    setPasswordPlaceholder('Almost, try again!');
+    if (placeholderResetTimer.current) {
+      window.clearTimeout(placeholderResetTimer.current);
+    }
+    placeholderResetTimer.current = window.setTimeout(() => {
+      setPasswordPlaceholder('Password');
+    }, 2500);
     setIsShaking(true);
     window.setTimeout(() => setIsShaking(false), 400);
   };
@@ -102,7 +119,7 @@ export default function WorkList() {
               type="password"
               value={passwordInput}
               onChange={(event) => setPasswordInput(event.target.value)}
-              placeholder="Password"
+              placeholder={passwordPlaceholder}
               autoFocus
             />
             <div className="password-gate-actions">
