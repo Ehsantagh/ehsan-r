@@ -9,12 +9,43 @@ export default function WorkList() {
   const [searchParams] = useSearchParams();
   const categoryFromUrl = searchParams.get('category');
   const [selectedCategory, setSelectedCategory] = useState(categoryFromUrl || 'All');
+  const [isGateOpen, setIsGateOpen] = useState(true);
+  const [passwordInput, setPasswordInput] = useState('');
+  const [isShaking, setIsShaking] = useState(false);
+  const gateStorageKey = 'worklistGateUnlockedAt';
+  const gateTtlMs = 60 * 60 * 1000;
 
   useEffect(() => {
     if (categoryFromUrl) {
       setSelectedCategory(categoryFromUrl);
     }
   }, [categoryFromUrl]);
+
+  useEffect(() => {
+    const lastUnlocked = Number(window.localStorage.getItem(gateStorageKey));
+    if (!Number.isNaN(lastUnlocked) && Date.now() - lastUnlocked < gateTtlMs) {
+      setIsGateOpen(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = isGateOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isGateOpen]);
+
+  const handleUnlock = (event) => {
+    event.preventDefault();
+    if (passwordInput.trim().toLowerCase() === 'afteryou') {
+      window.localStorage.setItem(gateStorageKey, String(Date.now()));
+      setIsGateOpen(false);
+      setIsShaking(false);
+      return;
+    }
+    setIsShaking(true);
+    window.setTimeout(() => setIsShaking(false), 400);
+  };
 
   const filteredWorks = selectedCategory === 'All'
     ? worksData
@@ -25,40 +56,66 @@ export default function WorkList() {
 
   return (
     <>
-      <Navbar selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} backgroundColor="#ffffff" />
-      
-      <main className="page-container">
-        <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Work</h1>
+      <div className={`worklist-content ${isGateOpen ? 'is-blurred' : ''}`}>
+        <Navbar selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} backgroundColor="#ffffff" />
 
-        {largeWork && (
-          <Link to={`/work/${largeWork.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-            <WorkCard
-              size="large"
-              image={largeWork.heroImage}
-              title={largeWork.title}
-              year={largeWork.timeline}
-              category={largeWork.category}
-            />
-          </Link>
-        )}
+        <main className="page-container">
+          <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Work</h1>
 
-        <div className="work-list-grid">
-          {smallWorks.map(work => (
-            <Link
-              key={work.id}
-              to={`/work/${work.id}`}
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
+          {largeWork && (
+            <Link to={`/work/${largeWork.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <WorkCard
-                image={work.heroImage}
-                title={work.title}
-                year={work.timeline}
-                category={work.category}
+                size="large"
+                image={largeWork.heroImage}
+                title={largeWork.title}
+                year={largeWork.timeline}
+                category={largeWork.category}
               />
             </Link>
-          ))}
+          )}
+
+          <div className="work-list-grid">
+            {smallWorks.map(work => (
+              <Link
+                key={work.id}
+                to={`/work/${work.id}`}
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <WorkCard
+                  image={work.heroImage}
+                  title={work.title}
+                  year={work.timeline}
+                  category={work.category}
+                />
+              </Link>
+            ))}
+          </div>
+        </main>
+      </div>
+
+      {isGateOpen && (
+        <div className="password-gate" role="dialog" aria-modal="true" aria-label="Password gate">
+          <form className={`password-gate-card ${isShaking ? 'is-shaking' : ''}`} onSubmit={handleUnlock}>
+            <p className="password-gate-title">Good design inside<br/> Password first</p>
+            <input
+              className="password-gate-input"
+              type="password"
+              value={passwordInput}
+              onChange={(event) => setPasswordInput(event.target.value)}
+              placeholder="Password"
+              autoFocus
+            />
+            <div className="password-gate-actions">
+              <button className="password-gate-button" type="submit">
+                Let me in
+              </button>
+              <Link className="password-gate-button secondary" to="/">
+                Not now
+              </Link>
+            </div>
+          </form>
         </div>
-      </main>
+      )}
     </>
   );
 }
