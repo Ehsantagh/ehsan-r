@@ -1,14 +1,16 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useContext } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import WorkCard from '../components/WorkCard';
 import Navbar from '../components/Navbar';
 import { worksData } from '../data/worksData';
+import { BackgroundContext } from '../App';
 import '../styles/portfolio.css';
 
 export default function WorkList() {
   const [searchParams] = useSearchParams();
   const categoryFromUrl = searchParams.get('category');
   const [selectedCategory, setSelectedCategory] = useState(categoryFromUrl || 'All');
+  const { backgroundColor } = useContext(BackgroundContext);
   const [isGateOpen, setIsGateOpen] = useState(true);
   const [passwordInput, setPasswordInput] = useState('');
   const [passwordPlaceholder, setPasswordPlaceholder] = useState('Password');
@@ -22,6 +24,10 @@ export default function WorkList() {
       setSelectedCategory(categoryFromUrl);
     }
   }, [categoryFromUrl]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const lastUnlocked = Number(window.localStorage.getItem(gateStorageKey));
@@ -74,7 +80,7 @@ export default function WorkList() {
   return (
     <>
       <div className={`worklist-content ${isGateOpen ? 'is-blurred' : ''}`}>
-        <Navbar selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} backgroundColor="#ffffff" />
+        <Navbar selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory} backgroundColor={backgroundColor} />
 
         <main className="page-container">
           <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Work</h1>
