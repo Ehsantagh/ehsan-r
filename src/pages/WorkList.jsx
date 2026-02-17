@@ -15,7 +15,9 @@ export default function WorkList() {
   const [passwordInput, setPasswordInput] = useState('');
   const [passwordPlaceholder, setPasswordPlaceholder] = useState('Password');
   const [isShaking, setIsShaking] = useState(false);
+  const [isGateEntered, setIsGateEntered] = useState(false);
   const placeholderResetTimer = useRef(null);
+  const gateEnterTimer = useRef(null);
   const gateStorageKey = 'worklistGateUnlockedAt';
   const gateTtlMs = 60 * 60 * 1000;
 
@@ -43,9 +45,26 @@ export default function WorkList() {
     };
   }, [isGateOpen]);
 
+  useEffect(() => {
+    if (!isGateOpen) {
+      setIsGateEntered(false);
+      return;
+    }
+    setIsGateEntered(false);
+    if (gateEnterTimer.current) {
+      window.clearTimeout(gateEnterTimer.current);
+    }
+    gateEnterTimer.current = window.setTimeout(() => {
+      setIsGateEntered(true);
+    }, 0);
+  }, [isGateOpen]);
+
   useEffect(() => () => {
     if (placeholderResetTimer.current) {
       window.clearTimeout(placeholderResetTimer.current);
+    }
+    if (gateEnterTimer.current) {
+      window.clearTimeout(gateEnterTimer.current);
     }
   }, []);
 
@@ -118,7 +137,7 @@ export default function WorkList() {
 
       {isGateOpen && (
         <div className="password-gate" role="dialog" aria-modal="true" aria-label="Password gate">
-          <form className={`password-gate-card ${isShaking ? 'is-shaking' : ''}`} onSubmit={handleUnlock}>
+          <form className={`password-gate-card ${isGateEntered ? 'is-entered' : ''} ${isShaking ? 'is-shaking' : ''}`} onSubmit={handleUnlock}>
             <p className="password-gate-title">Good design inside<br/> Password first</p>
             <input
               className="password-gate-input"
